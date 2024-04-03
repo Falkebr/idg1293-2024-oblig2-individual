@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px 100px;
+  background-color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+#poster {
+  height: 1369.2px;
+  width: 1200px;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */

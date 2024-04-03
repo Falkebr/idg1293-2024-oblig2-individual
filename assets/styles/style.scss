@@ -1,1 +1,24 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+// reset default
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    padding: 50px 100px;
+    background-color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+// Set height and width to aspect ratio of A3
+#poster {
+    height: 1369.2px;
+    width: 1200px;
+    background-color: white;
+}

@@ -1,4 +1,6 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+@use "colors.scss";
+
 // reset default
 * {
     box-sizing: border-box;
@@ -20,5 +22,9 @@ body {
 #poster {
     height: 1369.2px;
     width: 1200px;
+    background-color: colors.$sky-blue;
+}
+
+.poster__footer {
     background-color: white;
 }

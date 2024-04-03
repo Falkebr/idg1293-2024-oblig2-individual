@@ -14,8 +14,12 @@ body {
   justify-content: center;
 }
 
-#poster {
+.poster {
   height: 1369.2px;
   width: 1200px;
+  background-color: #00B1DC;
+}
+
+.poster__footer {
   background-color: white;
 }/*# sourceMappingURL=style.css.map */

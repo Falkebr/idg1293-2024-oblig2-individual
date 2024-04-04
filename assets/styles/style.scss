@@ -1,30 +1,77 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 @use "colors.scss";
 
-// reset default
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    padding: 50px 100px;
-    background-color: black;
+  padding: 50px 100px;
+  background-color: black;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-// Set height and width to aspect ratio of A3
-#poster {
-    height: 1369.2px;
-    width: 1200px;
-    background-color: colors.$sky-blue;
-}
+// basing the height and width of the artboard of the poster in Illustrator
+.poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  height: 841px;
+  width: 594px;
+  background-color: colors.$sky-blue;
 
-.poster__footer {
-    background-color: white;
+  &__header {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 20%;
+  }
+
+  &__bottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 70%;
+
+    .curve {
+      position: absolute;
+      left: 0;
+
+      &--blue {
+        top: 0;
+        z-index: 4;
+      }
+
+      &--white {
+        top: 10%;
+        z-index: 2;
+      }
+
+      &--pink {
+        bottom: 0;
+        z-index: 3;
+      }
+    }
+
+    path {
+      stroke-width: 0px;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: colors.$dark-blue;
+    height: 40px;
+    width: 100%;
+    z-index: 4;
+  }
 }

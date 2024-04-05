@@ -1,6 +1,10 @@
-// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 @use "colors.scss";
+@use "animations.scss";
 
+// variables
+$padding: 28px;
+
+// default styling
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +14,18 @@
 body {
   padding: 50px 100px;
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+p,
+h2 {
+  font-size: 14px;
+}
+
+ul {
+  display: block;
+  list-style-position: inside;
 }
 
 .center {
@@ -17,7 +33,36 @@ body {
   justify-content: center;
 }
 
-// basing the height and width of the artboard of the poster in Illustrator
+.keyword {
+  font-size: 1.2rem;
+}
+
+// positioning of the .svg curves for the background
+.curve {
+  position: absolute;
+  left: 0;
+
+  &--blue {
+    top: 0;
+    z-index: -1;
+  }
+
+  &--white {
+    top: 8%;
+    z-index: -3;
+  }
+
+  &--pink {
+    bottom: 0;
+    z-index: -2;
+  }
+
+  path {
+    stroke-width: 0px;
+  }
+}
+
+// basing the height and width on the artboard of the poster in Illustrator
 .poster {
   display: flex;
   flex-direction: column;
@@ -26,52 +71,205 @@ body {
   height: 841px;
   width: 594px;
   background-color: colors.$sky-blue;
+  z-index: -4;
 
-  &__header {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 20%;
+  // to override the specificiy of 'p'
+  &__text--small p,
+  &__text--small li {
+    font-size: 10px;
   }
 
-  &__bottom {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    height: 70%;
+}
 
-    .curve {
-      position: absolute;
-      left: 0;
+.poster__info-text {
+  font-size: 1rem;
+  max-width: 20ch; // changing the maximum characters on a line to make the paragraphs smaller
+}
 
-      &--blue {
-        top: 0;
-        z-index: 4;
+.poster__info-text--first, .poster__info-text--second {
+  position: absolute;
+  padding-left: $padding;
+}
+
+.poster__info-text--first {
+  top: 150px;
+}
+
+.poster__info-text--second {
+  bottom: 200px;
+}
+
+.poster__header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+
+  &-text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 2px;
+    padding: $padding;
+    width: 100%;
+
+    .poster__headline {
+      h1 {
+        font-size: 1.6rem;
+        line-height: 1;
+        width: 200px;
+        word-wrap: break-word; // to get the h1 to span two lines
+        margin-bottom: 5px;
       }
 
-      &--white {
-        top: 10%;
-        z-index: 2;
+      &-intro {
+        font-size: 0.85rem;
       }
-
-      &--pink {
-        bottom: 0;
-        z-index: 3;
-      }
-    }
-
-    path {
-      stroke-width: 0px;
     }
   }
 
-  &__footer {
+  .poster__aside-text {
     position: absolute;
     bottom: 0;
-    left: 0;
-    background-color: colors.$dark-blue;
-    height: 40px;
-    width: 100%;
-    z-index: 1;
+    max-width: 20ch;
+    padding-left: $padding;
   }
+}
+
+.poster__bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 70%;
+}
+
+// the text section about "energy"
+.poster__energy {
+  color: colors.$white;
+
+  &-headline {
+    position: absolute;
+    top: 110px;
+    left: 160px;
+
+    &--top {
+      display: block;
+    }
+
+    &--bottom {
+      display: block;
+      margin-left: 80px;
+    }
+  }
+
+  &-table {
+    display: flex;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    padding-right: $padding;
+
+    // "draw" with CSS learnt from class to make a slighly bent line
+    &::before {
+      content: "";
+      position: absolute;
+      border-top: 3px solid white;
+      border-radius: 2px;
+      right: 87px;
+      top: 20%;
+      width: 150px;
+      transform: rotate(-0.9deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-top: 3px solid white;
+      border-radius: 2px;
+      right: 28px;
+      top: 20%;
+      width: 61.5px;
+      transform: rotate(2.3deg);
+    }
+
+    h3 {
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+
+    &--right {
+      padding-right: 10px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100px;
+        border-left: 3px solid white;
+        border-radius: 1px;
+        height: 140%;
+      }
+
+      ul {
+        padding-right: 50px;
+      }
+    }
+  }
+}
+
+// the small text section about "gas"
+.poster__gas-info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 230px;
+  padding-left: $padding;
+
+  &--left,
+  &--right {
+    display: block;
+  }
+
+  &--left {
+    display: flex;
+    position: relative;
+    max-width: 20ch;
+    font-size: 12px;
+
+    span {
+      padding-top: 5px;
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.poster__facts {
+}
+
+.qr-code {
+  position: absolute;
+  max-width: 80px;
+  bottom: 40px;
+  right: 0;
+  margin: 5px;
+}
+
+.poster__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: colors.$dark-blue;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: colors.$white;
+  padding: 0 $padding;
 }

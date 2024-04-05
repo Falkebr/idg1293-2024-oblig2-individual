@@ -9,6 +9,7 @@
 
   <body>
     <div class="center">
+
       <div class="poster">
         <div class="poster__header">
           <svg
@@ -22,8 +23,30 @@
               d="M1682.97,0h0L0,.56h0l.26,433.4c379.91,215.67,921.73-144.52,1174.9-211.67,200.63-53.21,411.89,12.63,507.65,50.2"
             />
           </svg>
+          <div class="poster__header-text">
+            <div class="poster__headline">
+              <h1>
+                Webben og <span style="color: #0fa15c">planeten</span> vår
+              </h1>
+              <span class="poster__headline-intro"
+                >Oppdag webbens skjulte innvirkning på planeten</span
+              >
+            </div>
+            <div class="poster__info-text">
+              <p>
+                <span class="keyword">Internett</span> er helt supert, men det
+                trenger <span class="keyword">strøm</span> for å fungere
+              </p>
+            </div>
+          </div>
+          <div class="poster__aside-text poster__text--small">
+            <p>
+              Store datamaskiner kalt data- sentre bruker strøm for å holde
+              internett i gang
+            </p>
+          </div>
         </div>
-        
+
         <div class="poster__bottom">
           <svg
             class="curve curve--blue"
@@ -58,9 +81,71 @@
             />
           </svg>
 
-          <div class="poster__footer"></div>
+          <div class="poster__info-text--first poster__info-text">
+            <p>
+              <span class="keyword">Elektrisiteten</span> som brukes av nettet
+              kan føre til noe som kalles drivhusgasser
+            </p>
+          </div>
+
+          <div class="poster__energy">
+            <div class="poster__energy-headline">
+              <h2><span class="poster__energy-headline--top">Elektrisitet kommer fra</span><span class="poster__energy-headline--bottom">forskjellige kilder</span></h2>
+            </div>
+            <div class="poster__energy-table">
+              <div class="poster__energy-table--right poster__text--small">
+                <h3>Ikke-fornybar energi</h2>
+                <ul>
+                  <li>Olje</li>
+                  <li>Kull</li>
+                  <li>Naturgass</li>
+                </ul>
+              </div>
+              <div class="poster__energy-table--left poster__text--small">
+                <h3>Fornybar energi</h2>
+                <ul>
+                  <li>Solenergi</li>
+                  <li>Vindkraft</li>
+                  <li>Vannkraft</li>
+                  <li>Geotermisk energi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+            <div class="poster__gas-info">
+              <div class="poster__gas-info--left">
+                <span>Drivhusgasser forurenser planeten</span>
+                <img src="assets/svgs/brace-left.svg" alt="">
+              </div>
+                <ul class="poster__gas-info--right poster__text--small">
+                  <li>karbondioksid (CO2)</li>
+                  <li>metan (CH4)</li>
+                  <li>lystgass (N2O)</li>
+                </ul>
+              </div>
+    
+              <div class="poster__facts">
+                <div class="poster__info-text--second poster__info-text">
+                  <p>
+                    <span class="keyword">Klimaendringer</span> kan føre til:
+                  </p>
+                </div>
+              </div>
+
+          <!-- stored the QR code in its own file, because it's so damn long-->
+          <img src="assets/svgs/qr-code.svg" class="qr-code" alt="QR code to NTNU's climate posters">
         </div>
+
+        <footer class="poster__footer">
+          <div class="poster__footer-logo">
+            LOGO HER
+          </div>
+          <div class="poster__footer-download poster__text--small"><p>Last ned plakat: <a href>https://www.ntnu.no/web/design/digital-barekraft/illustrasjoner</a></p></div>
+          <div class="poster__footer-contact">Kontakt: carlos.vicient@ntnu.no</div>
+        </footer>
       </div>
+
     </div>
   </body>
 </html>

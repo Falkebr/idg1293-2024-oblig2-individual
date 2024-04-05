@@ -1,1 +1,76 @@
-/*# sourceMappingURL=animations.css.map */
+#cloud {
+  position: absolute;
+  width: 80px;
+  bottom: 40px;
+  left: 0;
+  margin: 0 32px;
+}
+#cloud .cls-1 {
+  fill: #231f20;
+}
+#cloud .cls-1,
+#cloud .cls-2,
+#cloud .cls-3 {
+  stroke-width: 0px;
+}
+#cloud .cls-4 {
+  fill: #dcddde;
+}
+#cloud .cls-4,
+#cloud .cls-5 {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 4.6px;
+}
+#cloud .cls-2 {
+  fill: #f3f4f4;
+}
+#cloud .cls-5 {
+  fill: #daedf4;
+}
+#cloud .cls-3 {
+  fill: #fff;
+}
+
+@keyframes cryAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes cryAnimationFadeIn {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.tear {
+  animation: cryAnimation 1.6s ease-in infinite;
+}
+
+.tear-fade {
+  animation: cryAnimationFadeIn 1.6s ease-in infinite;
+}
+
+@keyframes cloudUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.cloud-base {
+  animation: cloudUpDown 3s infinite alternate;
+}/*# sourceMappingURL=animations.css.map */

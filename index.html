@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDG1293-2024 Oblig 2</title>
     <link rel="stylesheet" href="assets/styles/style.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -47,15 +48,28 @@
         </div>
 
         <div class="poster__bottom">
+          
           <svg
             class="curve curve--blue"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1712.13 822.57"
+            viewBox="0 0 1712.13 882.57"
           >
-            <path
+            <path class="wave"
               fill="#005ba7"
               d="M1698.78,152.01c-116.91,139.87-307.05,213.49-486.84,215.77-149.04.58-288.69-57.54-434.59-80.44-215.93-33.89-544.91,64.97-694.83-111.94h0C41.76,127.65,16.04,62.43,0,0c0,43.54,0,118.62,0,156.96C0,212.81,42.74,261.87,83.57,300.9h0c44.63,42.68,104.49,65.42,164.27,77.67h0c84.08,17.18,171.55,16.25,256.6,25.42,199.51,15.71,355.12,150.59,509.81,263.75h0c193.91,158.79,491.9,226.21,697.87,52.18-.01-189.97,0-395.82,0-585.81-4.26,6.09-8.72,12.05-13.35,17.9Z"
             />
+          </svg>
+
+          <!-- took inspiration from the randomized blob animation form this CodePen: https://codepen.io/z-/pen/zYxdRQy-->
+          <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 594 150">
+            <defs>
+              <filter id="blur">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur"/>
+            </filter>
+            </defs>
+            <circle class="moveUpShorter bubble-pop" fill="#005ba7" cx="100" cy="75" style="--initial-radius: 10px;" />
+            <circle class="moveUp bubble-pop" fill="#005ba7" cx="430" cy="110" style="--initial-radius: 15px;" />
+            <circle class="moveUpHigher bubble-pop" fill="#005ba7" cx="450" cy="100" style="--initial-radius:8px;" />
           </svg>
 
           <svg

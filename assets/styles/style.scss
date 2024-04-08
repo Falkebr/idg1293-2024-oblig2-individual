@@ -138,8 +138,8 @@ ul {
 
   .poster__aside-text {
     position: absolute;
-    bottom: 0;
-    max-width: 20ch;
+    bottom: 20px;
+    max-width: 19ch;
     padding-left: $padding;
   }
 }
@@ -284,4 +284,8 @@ top: 1px;
   align-items: center;
   color: colors.$white;
   padding: 0 $padding;
+}
+
+@media (width <= 640px) {
+
 }

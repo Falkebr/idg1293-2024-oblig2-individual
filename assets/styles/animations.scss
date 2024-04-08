@@ -1,3 +1,233 @@
+// for "big-network" svg
+
+#big-network {
+    .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+      stroke-width: 0px;
+    }
+
+    .cls-1, .cls-9 {
+      fill: #231f20;
+    }
+
+    .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-9 {
+      stroke-miterlimit: 10;
+    }
+
+    .cls-10, .cls-12, .cls-13, .cls-14, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-23, .cls-9 {
+      stroke: #231f20;
+    }
+
+    .cls-10, .cls-12, .cls-13, .cls-15, .cls-18, .cls-19, .cls-20, .cls-21, .cls-9 {
+      stroke-width: 4.6px;
+    }
+
+    .cls-10, .cls-17 {
+      fill: #f5ec43;
+    }
+
+    .cls-2 {
+      fill: #414042;
+    }
+
+    .cls-11 {
+      stroke: #101416;
+    }
+
+    .cls-11, .cls-6, .cls-20, .cls-23 {
+      fill: #fff;
+    }
+
+    .cls-11, .cls-23 {
+      stroke-width: 4.6px;
+    }
+
+    .cls-12, .cls-15, .cls-22 {
+      fill: none;
+    }
+
+    .cls-13 {
+      fill: #b6a69e;
+    }
+
+    .cls-3, .cls-14, .cls-21 {
+      fill: #a1cf6d;
+    }
+
+    .cls-14, .cls-17 {
+      stroke-width: 4.6px;
+    }
+
+    .cls-4, .cls-18 {
+      fill: #00b1dc;
+    }
+
+    .cls-5 {
+      fill: #005ba7;
+    }
+
+    .cls-15 {
+      stroke: #fff;
+    }
+
+    .cls-16 {
+      fill: #0a0203;
+    }
+
+    .cls-19 {
+      fill: #ad9282;
+    }
+
+    .cls-7 {
+      fill: #0fa15c;
+    }
+
+    .cls-22 {
+      stroke: #414042;
+      stroke-width: 2px;
+    }
+
+    .cls-8 {
+      fill: #101416;
+    }
+}
+
+@keyframes moveArrow {
+  10%, 40% {
+      transform: translateX(10px);
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blackToBlueLine {
+  0% {
+    fill: black; 
+  }
+  20%, 60% {
+    fill: #0AFFED;
+  }
+  60%, 100% {
+    fill: black;
+  }
+}
+
+@keyframes blackToBlueLineDelayed {
+  60%, 100% {
+    fill: #0AFFED;
+  }
+}
+
+@keyframes blackToBlueIcon {
+  0% {
+    stroke: black;
+  }
+  20%, 60% {
+    stroke: #0AFFED;
+  }
+  60%, 100% {
+    stroke: black;
+  }
+}
+
+@keyframes blackToBlueIconDelayed {
+  0%, 60% {
+    stroke: black;
+  }
+  
+  60%, 100% {
+    stroke: #0AFFED;
+  }
+}
+
+@keyframes networkSignal1 {
+  0% { opacity: 0; transform: translateY(20px); } 
+  20%, 60% { opacity: 1; transform: translateY(0); } 
+  60%, 100% { opacity: 0; } 
+}
+
+@keyframes networkSignal2 {
+  0% { opacity: 0; transform: translateY(20px); }
+  25%, 60% { opacity: 1; transform: translateY(0); }
+  60%, 100% { opacity: 0; };
+}
+
+@keyframes networkSignal3 {
+  0% { opacity: 0; transform: translateY(20px); } 
+  30%, 60% { opacity: 1; transform: translateY(0); }
+  60%, 100% { opacity: 0; } 
+}
+
+@keyframes networkSignal4 {
+  0% { opacity: 0; transform: translateY(20px); } 
+  40%, 60% { opacity: 1; transform: translateY(0); } 
+  60%, 100% { opacity: 0; } 
+}
+
+@keyframes windowLight {
+  0% {
+    fill: white;
+  }
+  20%, 60% {
+    fill: yellow;
+  }
+  60%, 100% {
+    fill: white;
+  }
+}
+
+.network-line {
+  animation: blackToBlueLine 5s forwards infinite;
+}
+.network-icon {
+  animation: blackToBlueIcon 5s forwards infinite;
+}
+
+.network-iconToMan {
+  animation: blackToBlueIconDelayed 5s forwards infinite;
+}
+.network-lineToMan {
+  animation: blackToBlueLineDelayed 5s forwards infinite;
+}
+
+#network-arrow {
+  transform: translateX(-80px);
+  animation: moveArrow 5s forwards infinite;
+}
+
+.network-signal1 {
+  animation: networkSignal1 5s infinite;
+}
+
+.network-signal2 {
+  animation: networkSignal2 5s infinite;
+}
+
+.network-signal3 {
+  animation: networkSignal3 5s infinite;
+}
+
+.network-signal4 {
+  animation: networkSignal4 5s infinite;
+}
+
+.building-windows {
+  animation: windowLight 5s forwards infinite;
+}
+
+#network-man {
+  transform: scale(0.9);
+   transform-origin: center;
+  animation: hiThere 5s ease infinite;
+}
+
+// inspired by the "hiThere" in this CodePen: https://codepen.io/nelledejones/pen/gOOPWrK
+@keyframes hiThere {
+  60%, 100% { transform: scale(1); }
+}
+
+// for "cloud" svg
 #cloud {
   position: absolute;
   width: 80px;
@@ -88,7 +318,7 @@
   animation: cloudUpDown 3s infinite alternate;
 }
 
-// test
+// for blue curve svg
 @keyframes waveAnimation {
   0% {
     d: path(

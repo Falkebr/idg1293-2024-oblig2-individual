@@ -73,7 +73,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
+  position: relative;
   height: 841px;
   width: 594px;
   background-color: colors.$sky-blue;
@@ -401,6 +401,12 @@ ul {
     flex-direction: column;
     align-items: center;
     margin: 10px;
+  }
+}
+
+@media (width <= 800px) {
+  body {
+    padding: 50px 0;
   }
 }
 

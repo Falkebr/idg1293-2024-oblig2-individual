@@ -1,5 +1,5 @@
 // for "big-network" svg
-
+// Trick on how to delay in an animation sequence when you want it to loop: https://css-tricks.com/css-keyframe-animation-delay-iterations/
 #big-network {
     .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
       stroke-width: 0px;
@@ -92,13 +92,19 @@
 }
 
 @keyframes moveArrow {
-  10%, 40% {
-      transform: translateX(10px);
+  5%, 10% {
+    transform: translateX(10px);
     opacity: 1;
   }
-  40%, 100% {
+  15%, 100% {
     opacity: 0;
   }
+}
+
+@keyframes textAppear {
+  0%, 20% {opacity: 0;}
+  30%, 90% {opacity: 1;}
+  0%, 100% {opacity: 0;}
 }
 
 @keyframes blackToBlueLine {
@@ -177,6 +183,15 @@
   }
 }
 
+#network-arrow {
+  transform: translateX(-20px);
+  animation: moveArrow 5s forwards infinite;
+}
+
+.poster__aside-text {
+  animation: textAppear 5s ease-out infinite;
+}
+
 .network-line {
   animation: blackToBlueLine 5s forwards infinite;
 }
@@ -189,11 +204,6 @@
 }
 .network-lineToMan {
   animation: blackToBlueLineDelayed 5s forwards infinite;
-}
-
-#network-arrow {
-  transform: translateX(-80px);
-  animation: moveArrow 5s forwards infinite;
 }
 
 .network-signal1 {

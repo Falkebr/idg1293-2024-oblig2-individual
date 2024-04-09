@@ -377,26 +377,22 @@ ul {
         color: colors.$white;
       }
 
-      &::before {
+      &::before, &::after {
         content: "";
         position: absolute;
         border-top: 3px solid white;
         border-radius: 2px;
-        left: -20px;
         top: 40%;
         width: 30px;
         transform: rotate(90deg);
       }
   
+      &::before {
+        left: -20px;
+      }
+      
       &::after {
-        content: "";
-        position: absolute;
-        border-top: 3px solid white;
-        border-radius: 2px;
         right: -20px;
-        top: 40%;
-        width: 30px;
-        transform: rotate(90deg);
       }
   }
 

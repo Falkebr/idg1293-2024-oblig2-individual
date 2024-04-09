@@ -689,25 +689,20 @@ ul {
   text-decoration: none;
   color: #FFFFFF;
 }
-.poster__footer-download::before {
+.poster__footer-download::before, .poster__footer-download::after {
   content: "";
   position: absolute;
   border-top: 3px solid white;
   border-radius: 2px;
-  left: -20px;
   top: 40%;
   width: 30px;
   transform: rotate(90deg);
 }
+.poster__footer-download::before {
+  left: -20px;
+}
 .poster__footer-download::after {
-  content: "";
-  position: absolute;
-  border-top: 3px solid white;
-  border-radius: 2px;
   right: -20px;
-  top: 40%;
-  width: 30px;
-  transform: rotate(90deg);
 }
 .poster__footer-contact {
   display: flex;

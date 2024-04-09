@@ -434,7 +434,8 @@ ul {
   background-color: #D9F3FA;
   z-index: -4;
 }
-.poster__text--small p, .poster__text--small li {
+
+.text--small p, .text--small span, .text--small a, .text--small li {
   font-size: 10px;
 }
 
@@ -666,6 +667,53 @@ ul {
   align-items: center;
   color: #FFFFFF;
   padding: 0 32px;
+  font-size: 8px;
+  white-space: nowrap;
+}
+.poster__footer-logo {
+  width: 175px;
+  padding-right: 5px;
+}
+.poster__footer-download {
+  text-align: right;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 0 8px;
+}
+.poster__footer-download span, .poster__footer-download a {
+  display: block;
+  text-align: right;
+}
+.poster__footer-download a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.poster__footer-download::before {
+  content: "";
+  position: absolute;
+  border-top: 3px solid white;
+  border-radius: 2px;
+  left: -20px;
+  top: 40%;
+  width: 30px;
+  transform: rotate(90deg);
+}
+.poster__footer-download::after {
+  content: "";
+  position: absolute;
+  border-top: 3px solid white;
+  border-radius: 2px;
+  right: -20px;
+  top: 40%;
+  width: 30px;
+  transform: rotate(90deg);
+}
+.poster__footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
 @media (width <= 600px) {

@@ -78,14 +78,14 @@ ul {
   width: 594px;
   background-color: colors.$sky-blue;
   z-index: -4;
+}
 
   // to override the specificiy of 'p'
-  &__text--small p,
-  &__text--small li {
-    font-size: 10px;
+  .text--small {
+    p, span, a, li {
+      font-size: 10px;
+    }
   }
-
-}
 
 .poster__info-text {
   font-size: 1rem;
@@ -352,6 +352,60 @@ ul {
   align-items: center;
   color: colors.$white;
   padding: 0 $padding;
+  font-size: 8px;
+  white-space: nowrap;
+
+  &-logo {
+    width: 175px;
+    padding-right: 5px;
+  }
+
+  &-download {
+      text-align: right;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      padding: 0 8px;
+
+      span, a {
+        display: block;
+        text-align: right;
+      }
+
+      a {
+        text-decoration: none;
+        color: colors.$white;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        border-top: 3px solid white;
+        border-radius: 2px;
+        left: -20px;
+        top: 40%;
+        width: 30px;
+        transform: rotate(90deg);
+      }
+  
+      &::after {
+        content: "";
+        position: absolute;
+        border-top: 3px solid white;
+        border-radius: 2px;
+        right: -20px;
+        top: 40%;
+        width: 30px;
+        transform: rotate(90deg);
+      }
+  }
+
+  &-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
 }
 
 @media (width <= 600px) {

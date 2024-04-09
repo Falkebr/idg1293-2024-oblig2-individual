@@ -43,7 +43,7 @@ ul {
   left: 0;
 
   &--blue {
-    top: 0;
+    top: -2%;
     z-index: -1;
   }
 
@@ -65,7 +65,7 @@ ul {
 .bubble {
   width: 100%;
   height: 200px;
-  filter:url(#blur);
+  filter: url(#blur);
 }
 
 // basing the height and width on the artboard of the poster in Illustrator
@@ -92,7 +92,8 @@ ul {
   max-width: 20ch; // changing the maximum characters on a line to make the paragraphs smaller
 }
 
-.poster__info-text--first, .poster__info-text--second {
+.poster__info-text--first,
+.poster__info-text--second {
   position: absolute;
   padding-left: $padding;
 }
@@ -102,7 +103,7 @@ ul {
 }
 
 .poster__info-text--second {
-  bottom: 220px;
+  top: 50px;
 }
 
 .poster__header {
@@ -145,9 +146,9 @@ ul {
 }
 
 .big-network {
-position: absolute;
-width: 100%;
-top: 1px;
+  position: absolute;
+  width: 100%;
+  top: 1px;
 }
 
 .poster__bottom {
@@ -261,6 +262,73 @@ top: 1px;
 }
 
 .poster__facts {
+  width: 100%;
+  height: 275px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.poster__facts-text {
+  position: absolute;
+  width: 12ch;
+  padding-left: $padding;
+
+  p {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 11px;
+  }
+}
+
+.fact {
+  &1 {
+    top: 35px;
+    left: 200px;
+  }
+
+  &2 {
+    left: 325px;
+  }
+
+  &3 {
+    right: $padding;
+    top: 28px;
+
+    h2 {
+     width: 10ch;
+    }
+  }
+
+  &4 {
+   right: $padding;
+    bottom: 92px;
+    width: 17ch;
+  }
+
+  &5 {
+    right: 150px;
+    bottom: 20px;
+  }
+
+  &6 {
+    left: 120px;
+    bottom: 20px;
+  }
+
+  &7 {
+    padding-left: $padding;
+    top: 115px;
+
+    p {
+    width: 15ch;
+    }
+
+    h2 {
+    width: 20ch;
+    }
+  }
 }
 
 .qr-code {
@@ -286,12 +354,12 @@ top: 1px;
   padding: 0 $padding;
 }
 
-@media (width <= 600px) {         
+@media (width <= 600px) {
   body {
     padding: 0;
-  } 
+  }
 
-   .center {
+  .center {
     display: block;
     justify-content: initial;
   }

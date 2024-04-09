@@ -286,6 +286,13 @@ top: 1px;
   padding: 0 $padding;
 }
 
-@media (width <= 640px) {
+@media (width <= 600px) {         
+  body {
+    padding: 0;
+  } 
 
+   .center {
+    display: block;
+    justify-content: initial;
+  }
 }

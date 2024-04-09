@@ -608,4 +608,14 @@ ul {
   align-items: center;
   color: #FFFFFF;
   padding: 0 32px;
+}
+
+@media (width <= 600px) {
+  body {
+    padding: 0;
+  }
+  .center {
+    display: block;
+    justify-content: initial;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -425,3 +425,123 @@
 #earth-main {
   animation: rotateEarth 5s linear infinite;
 }
+
+#earth-bubble  {
+  .cls-1 {
+          fill: #231f20;
+        }
+  
+        .cls-1, .cls-2, .cls-3, .cls-4 {
+          stroke-width: 0px;
+        }
+  
+        .cls-2 {
+          fill: #ede9ba;
+        }
+  
+        .cls-3 {
+          fill: #c1be67;
+        }
+  
+        .cls-4 {
+          fill: #c76d61;
+        }
+  
+        .cls-5 {
+          fill: none;
+        }
+  
+        .cls-5, .cls-6, .cls-7, .cls-8 {
+          stroke: #231f20;
+          stroke-miterlimit: 10;
+        }
+  
+        .cls-5, .cls-8 {
+          stroke-width: 4.6px;
+        }
+  
+        .cls-6 {
+          stroke-width: 4.6px;
+        }
+  
+        .cls-6, .cls-8 {
+          fill: #fff;
+        }
+  
+        .cls-7 {
+          fill: #79a7b6;
+          stroke-width: 2px;
+        }
+  }
+  
+  
+  // making it quickly fade from 94% to 100% to make the animation less "hacky"
+  @keyframes showDot1 {
+    0%, 30% {
+      opacity: 0;
+    }
+    31%, 95% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes showDot2 {
+    0%, 25% {
+      opacity: 0;
+    }
+    26%, 95% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes showDot3 {
+    0%, 20% {
+      opacity: 0;
+    }
+    21%, 95% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes showThinkingCloud {
+     0%, 35% {
+      opacity: 0;
+    }
+    36%, 95% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #thinking-dot1 {
+    animation: showDot1 7s infinite;
+  }
+  
+  #thinking-dot2 {
+    animation: showDot2 7s infinite;
+  }
+  
+  #thinking-dot3 {
+    animation: showDot3 7s infinite;
+  }
+  
+  #thinking-bubble {
+    animation: showThinkingCloud 7s ease-in-out infinite;
+  }
+  
+  

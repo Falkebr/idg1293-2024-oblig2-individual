@@ -585,6 +585,11 @@ ul {
   bottom: 0;
   z-index: -2;
 }
+.curve--pink-path {
+  fill: none;
+  top: 220px;
+  z-index: 5;
+}
 .curve path {
   stroke-width: 0px;
 }
@@ -606,7 +611,10 @@ ul {
   z-index: -4;
 }
 
-.text--small p, .text--small span, .text--small a, .text--small li {
+.text--small p,
+.text--small span,
+.text--small a,
+.text--small li {
   font-size: 10px;
 }
 
@@ -874,7 +882,8 @@ ul {
   flex-direction: column;
   padding: 0 8px;
 }
-.poster__footer-download span, .poster__footer-download a {
+.poster__footer-download span,
+.poster__footer-download a {
   display: block;
   text-align: right;
 }

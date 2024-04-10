@@ -381,6 +381,16 @@
             />
           </svg>
 
+          <!-- svg of curve extracted from the pink one, and using SMIL path animation to make the star follow it -->
+          <svg class="curve curve--pink-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1728.79 417.45">
+            <path id="curve-path" class="cls-1" d="M1727.29,217.45c-43.51-49.72-247.45-168.95-493.98-168.95-159.62,0-267.17,37.51-381.03,77.22-120.12,41.89-244.15,85.15-438.03,85.15-9.29,0-18.73-.1-28.34-.3-83.17-1.76-154.66-12.23-212.48-31.12-47.73-15.59-86.59-37.04-115.51-63.74C7.53,69.19,0.63,19.34,0,.06l2-.06c.62,19.02,7.44,68.23,57.27,114.24,64.29,59.37,174.2,91.1,326.67,94.33,209.97,4.46,339.97-40.89,465.67-84.74,114.03-39.77,221.74-77.34,381.69-77.34,247.18,0,451.8,119.71,495.49,169.64l-1.51,1.32Z"/>
+            <polygon id="star" points="100,10 110,45 150,60 110,75 100,110 90,75 50,60 90,45" fill="yellow" stroke="black" stroke-width="3px">
+              <animateMotion dur="12s" repeatCount="indefinite">
+                <mpath xlink:href="#curve-path" />
+              </animateMotion>
+            </polygon>
+          </svg>
+          
           <div class="poster__info-text--first poster__info-text">
             <p>
               <span class="keyword">Elektrisiteten</span> som brukes av nettet

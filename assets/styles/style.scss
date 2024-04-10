@@ -55,6 +55,12 @@ ul {
   &--pink {
     bottom: 0;
     z-index: -2;
+
+    &-path {
+      fill: none;
+      top: 220px;
+      z-index: 5;
+    }
   }
 
   path {
@@ -80,12 +86,16 @@ ul {
   z-index: -4;
 }
 
-  // to override the specificiy of 'p'
-  .text--small {
-    p, span, a, li {
-      font-size: 10px;
-    }
+// to override the specificiy of 'p'
+.text--small {
+
+  p,
+  span,
+  a,
+  li {
+    font-size: 10px;
   }
+}
 
 .poster__info-text {
   font-size: 1rem;
@@ -297,12 +307,12 @@ ul {
     top: 28px;
 
     h2 {
-     width: 10ch;
+      width: 10ch;
     }
   }
 
   &4 {
-   right: $padding;
+    right: $padding;
     bottom: 92px;
     width: 17ch;
   }
@@ -322,11 +332,11 @@ ul {
     top: 115px;
 
     p {
-    width: 15ch;
+      width: 15ch;
     }
 
     h2 {
-    width: 20ch;
+      width: 20ch;
     }
   }
 }
@@ -334,9 +344,9 @@ ul {
 // styling to make the two svg elements become one unit
 // a less optimal way...
 #earth {
- position: absolute;
- bottom: 110px;
- right: 120px;
+  position: absolute;
+  bottom: 110px;
+  right: 120px;
 }
 
 #earth-container {
@@ -345,7 +355,7 @@ ul {
 }
 
 #earth-main {
-  max-width: 130px; 
+  max-width: 130px;
   margin-right: 5px;
 }
 
@@ -353,7 +363,6 @@ ul {
   max-width: 68px;
   position: absolute;
   top: -15px;
-
 }
 
 .qr-code {
@@ -386,39 +395,41 @@ ul {
   }
 
   &-download {
+    text-align: right;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0 8px;
+
+    span,
+    a {
+      display: block;
       text-align: right;
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      padding: 0 8px;
+    }
 
-      span, a {
-        display: block;
-        text-align: right;
-      }
+    a {
+      text-decoration: none;
+      color: colors.$white;
+    }
 
-      a {
-        text-decoration: none;
-        color: colors.$white;
-      }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-top: 3px solid white;
+      border-radius: 2px;
+      top: 40%;
+      width: 30px;
+      transform: rotate(90deg);
+    }
 
-      &::before, &::after {
-        content: "";
-        position: absolute;
-        border-top: 3px solid white;
-        border-radius: 2px;
-        top: 40%;
-        width: 30px;
-        transform: rotate(90deg);
-      }
-  
-      &::before {
-        left: -20px;
-      }
-      
-      &::after {
-        right: -20px;
-      }
+    &::before {
+      left: -20px;
+    }
+
+    &::after {
+      right: -20px;
+    }
   }
 
   &-contact {
@@ -429,13 +440,13 @@ ul {
   }
 }
 
-@media (width <= 800px) {
+@media (width <=800px) {
   body {
     padding: 0;
   }
 }
 
-@media (width <= 600px) {
+@media (width <=600px) {
   body {
     padding: 0;
   }

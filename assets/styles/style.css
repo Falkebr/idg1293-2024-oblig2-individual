@@ -538,19 +538,20 @@
 }
 
 .sun-container {
-  position: relative;
+  position: absolute;
   left: 120px;
-  top: 130px;
+  bottom: 240px;
+  width: 220px;
   animation: updown 5s infinite alternate;
 }
 
 .sun-body {
   position: absolute;
-  width: 20%;
+  width: 50%;
 }
 
 .sun-rays {
-  width: 20%;
+  width: 50%;
   position: absolute;
   animation: spin 50s infinite;
   transform-origin: center;
@@ -633,9 +634,9 @@
 
 #gasClouds {
   position: absolute;
-  width: 20%;
-  left: 220px;
-  top: 175px;
+  width: 30%;
+  left: 190px;
+  top: 142px;
 }
 
 .gasCloudOne .cls-1, .gasCloudOne .cls-3, .gasCloudOne .cls-4, .gasCloudTwo .cls-1, .gasCloudTwo .cls-3, .gasCloudTwo .cls-4, .gasCloudThree .cls-1, .gasCloudThree .cls-3, .gasCloudThree .cls-4, .gasCloudFour .cls-1, .gasCloudFour .cls-3, .gasCloudFour .cls-4, .gasCloudFive .cls-1, .gasCloudFive .cls-3, .gasCloudFive .cls-4 {
@@ -829,6 +830,40 @@
   50% {
     transform: rotate(-5deg) scale(1.1);
   }
+}
+.arrow-wiggly {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 4.6px;
+}
+
+#arrow-wiggly1 {
+  position: absolute;
+  width: 40px;
+  top: 45px;
+  right: 115px;
+}
+
+#arrow-wiggly2 {
+  position: absolute;
+  width: 102px;
+  top: 160px;
+  right: 210px;
+}
+
+@font-face {
+  font-family: "Marydale";
+  src: url("fonts/Marydale Regular.ttf") format("truetype"), url("fonts/Marydale Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Marydale";
+  src: url("fonts/Marydale Bold.ttf") format("truetype"), url("fonts/Marydale Bold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/Open Sans Bold.ttf") format("truetype"), url("fonts/Open Sans Bold.woff") format("woff");
+  font-weight: bold;
 }
 * {
   box-sizing: border-box;

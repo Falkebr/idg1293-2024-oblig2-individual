@@ -4,6 +4,24 @@
 // variables
 $padding: 32px;
 
+// fonts
+@font-face {
+  font-family:'Marydale';
+  src: url('fonts/Marydale Regular.ttf') format('truetype'), url('fonts/Marydale Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Marydale';
+  src: url('fonts/Marydale Bold.ttf') format('truetype'), url('fonts/Marydale Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family:'Open Sans';
+  src: url('fonts/Open Sans Bold.ttf') format('truetype'), url('fonts/Open Sans Bold.woff') format('woff');
+  font-weight: bold;
+}
+
 // default styling
 * {
   box-sizing: border-box;

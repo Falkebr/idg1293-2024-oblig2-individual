@@ -278,8 +278,6 @@ transform: rotate(5deg) translateX(5px) scale(0.9);
 d: path("M55.37,167c-23.07-4.62-67.48-22.71-48.45-61.13,10.07-20.35,32.98-17.63,38.61-36.31,5.43-16.22-22.65-9.65-19.68-24.62,8.44-42.64,17.49-29.36,15.49-12.08-1.68,14.53,26.3,18,33.77,27.1,12.16,14.83,16.16-45.01,16.63-47.51,1.75-9.38,17-17.17,10.79.07-4.72,13.1,10.95,15.97,14.85,26.11,1.43,7.29-5.76,25.35,9.2,15.66,9.64-4.95,3.5-18.14,11.34-23.09,6.38-4.03,13.73,14.81,10.17,23.59-3.1,14.94-17.11,30.4-9.11,45.01,13.15,24.01-25.32,14.59-23.36,33.25,2.06,19.68-11.79,37.12-41.66,34.3-6.23-.59-12.44.87-18.58-.36Z");
 }
 
-
-
 70% {
 transform: scale(0.8);
 d: path("M55.37,167c-23.07-4.62-67.48-22.71-48.45-61.13,10.07-20.35,32.98-17.63,38.61-36.31,5.43-16.22-22.65-9.65-19.68-24.62,8.44-42.64,17.49-29.36,15.49-12.08-1.68,14.53,26.3,18,33.77,27.1,12.16,14.83,16.16-45.01,16.63-47.51,1.75-9.38,17-17.17,10.79.07-4.72,13.1,10.95,15.97,14.85,26.11,1.43,7.29-5.76,25.35,9.2,15.66,9.64-4.95,3.5-18.14,11.34-23.09,6.38-4.03,13.73,14.81,10.17,23.59-3.1,14.94-17.11,30.4-9.11,45.01,13.15,24.01-25.32,14.59-23.36,33.25,2.06,19.68-11.79,37.12-41.66,34.3-6.23-.59-12.44.87-18.58-.36Z");
@@ -603,25 +601,27 @@ animation: flameShift 0.8s infinite;
     animation: showThinkingCloud 7s ease-in-out infinite;
   }
   
+  
   .sun-container {
-    position: relative;
+    position: absolute;
     left: 120px;
-    top: 130px;
+    bottom: 240px;
+    width: 220px;
     animation: updown 5s infinite alternate;
   }
   
   .sun-body {
     position: absolute;
-    width: 20%;
+    width: 50%;
   }
   
   .sun-rays {
-    width: 20%;
+    width: 50%;
     position: absolute;
     animation: spin 50s infinite;
     transform-origin: center;
   }
-  
+
   @keyframes spin {
     0% {transform: rotate(360deg)};
   }
@@ -695,9 +695,9 @@ animation: flameShift 0.8s infinite;
   
   #gasClouds {
     position: absolute;
-    width: 20%;
-    left: 220px;
-    top: 175px;
+    width: 30%;
+    left: 190px;
+    top: 142px;
   }
   
   .gasCloudOne, .gasCloudTwo, .gasCloudThree, .gasCloudFour, .gasCloudFive {
@@ -909,3 +909,25 @@ animation: flameShift 0.8s infinite;
   transform: rotate(-5deg) scale(1.1);
   }
   }
+
+  // styling for the wiggly arrows :)
+  .arrow-wiggly {
+    stroke: #231f20; 
+    stroke-miterlimit: 10;
+    stroke-width: 4.6px;
+  }
+
+  #arrow-wiggly1 {
+    position: absolute;
+    width: 40px;
+    top: 45px;
+    right: 115px;
+  }
+  
+  #arrow-wiggly2 {
+    position: absolute;
+    width: 102px;
+    top: 160px;
+    right: 210px;
+  }
+  

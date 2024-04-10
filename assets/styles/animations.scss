@@ -412,6 +412,16 @@
     animation: moveUpShorter 1.2s forwards infinite, bubblePop 1.2s linear infinite;
 }
 
+// earth svg
+@keyframes rotateEarth {
+  0% {
+    transform: rotate(0);
+  }
+    100% {
+    transform: rotate(360deg);
+  }
+}
 
-
-
+#earth-main {
+  animation: rotateEarth 5s linear infinite;
+}

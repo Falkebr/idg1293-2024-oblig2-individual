@@ -573,7 +573,7 @@
 .moneybag {
   position: absolute;
   left: 280px;
-  bottom: 55px;
+  bottom: 52px;
   width: 10%;
   animation: updown 3s infinite alternate ease-in-out;
 }
@@ -969,7 +969,7 @@ ul {
 }
 
 .poster__info-text--second {
-  top: 50px;
+  top: 60px;
 }
 
 .poster__header {
@@ -1153,13 +1153,13 @@ ul {
 }
 
 .fact1 {
-  top: 45px;
-  left: 200px;
+  top: 40px;
+  left: 220px;
   width: 10ch;
 }
 .fact2 {
-  top: 4px;
-  left: 340px;
+  top: 10px;
+  left: 360px;
   width: 9ch;
 }
 .fact3 {
@@ -1180,18 +1180,18 @@ ul {
   width: 13ch;
 }
 .fact5 {
-  right: 100px;
+  right: 110px;
   bottom: 25px;
   width: 11ch;
 }
 .fact6 {
-  left: 145px;
+  left: 155px;
   bottom: 25px;
   width: 10ch;
 }
 .fact7 {
   padding-left: 32px;
-  top: 130px;
+  top: 150px;
 }
 .fact7 p {
   width: 14ch;
@@ -1202,13 +1202,13 @@ ul {
 
 #earth {
   position: absolute;
-  bottom: 130px;
-  right: 135px;
+  bottom: 120px;
+  right: 155px;
 }
 
 #earth-container {
   position: relative;
-  width: 198px;
+  width: 185px;
 }
 
 #earth-main {

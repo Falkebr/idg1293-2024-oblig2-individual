@@ -239,8 +239,8 @@
 // "flame" svg
 #flame {
   position: absolute;
-  top: 170px;
-  right: 115px;
+  top: 60px;
+  right: 128px;
   width: 70px;
 
   .cls-1 {
@@ -410,7 +410,6 @@ animation: flameShift 0.8s infinite;
   animation: waveAnimation 1.5s linear infinite alternate;
 }
 
-//
 @keyframes bubblePop {
     0% {
         r: var(--initial-radius);
@@ -605,7 +604,7 @@ animation: flameShift 0.8s infinite;
   .sun-container {
     position: absolute;
     left: 120px;
-    bottom: 240px;
+    bottom: 250px;
     width: 220px;
     animation: updown 5s infinite alternate;
   }
@@ -638,7 +637,7 @@ animation: flameShift 0.8s infinite;
   .moneybag {
     position: absolute;
     left: 270px;
-    bottom: 52px;
+    bottom: 55px;
     width: 10%;
     animation: updown 3s infinite alternate ease-in-out;
  
@@ -696,8 +695,8 @@ animation: flameShift 0.8s infinite;
   #gasClouds {
     position: absolute;
     width: 30%;
-    left: 190px;
-    top: 142px;
+    left: 162px;
+    top: 30px;
   }
   
   .gasCloudOne, .gasCloudTwo, .gasCloudThree, .gasCloudFour, .gasCloudFive {
@@ -919,15 +918,15 @@ animation: flameShift 0.8s infinite;
 
   #arrow-wiggly1 {
     position: absolute;
-    width: 40px;
-    top: 45px;
+    width: 38px;
+    top: -48px;
     right: 115px;
   }
   
   #arrow-wiggly2 {
     position: absolute;
     width: 102px;
-    top: 160px;
-    right: 210px;
+    top: 50px;
+    right: 220px;
   }
   

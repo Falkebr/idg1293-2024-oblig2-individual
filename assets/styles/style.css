@@ -953,15 +953,21 @@
 
 @font-face {
   font-family: "Marydale";
-  src: url("../fonts/Marydale Regular.ttf") format("truetype"), url("fonts/Marydale Regular.woff") format("woff");
+  src: url("../fonts/marydale-regular.ttf") format("ttf"), url("../fonts/marydale-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Marydale Bold";
-  src: url("../fonts/Marydale Bold.ttf") format("truetype"), url("fonts/Marydale Bold.woff") format("woff");
+  font-family: "Marydale";
+  src: url("../fonts/marydale-bold.ttf") format("ttf"), url("../fonts/marydale-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Marydale Black";
-  src: url("../fonts/Marydale Black.ttf") format("truetype"), url("fonts/Marydale Black.woff") format("woff");
+  font-family: "Marydale";
+  src: url("../fonts/marydale-black.ttf") format("ttf"), url("../fonts/marydale-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 * {
   box-sizing: border-box;
@@ -1048,7 +1054,7 @@ ul {
 }
 
 .poster__info-text {
-  font-weight: 600;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1.1;
   width: 16ch;
 }
@@ -1098,7 +1104,8 @@ ul {
   color: #0FA15C;
 }
 .poster__header-text .poster__headline-intro {
-  font-family: "Marydale Bold";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
   font-size: 0.78rem;
 }
 .poster__header .poster__aside-text {
@@ -1108,7 +1115,7 @@ ul {
   padding-left: 32px;
 }
 .poster__header .poster__aside-text p {
-  font-family: "Marydale Bold";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 
 #big-network {
@@ -1135,7 +1142,8 @@ ul {
   transform: rotate(7deg);
 }
 .poster__energy-headline h2 {
-  font-family: "Marydale Bold";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 .poster__energy-headline--top {
   display: block;
@@ -1151,10 +1159,10 @@ ul {
   top: 35px;
   right: 14px;
   padding-right: 32px;
-  font-family: "Marydale";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 .poster__energy-table h3 {
-  font-family: "Marydale Bold";
+  font-weight: bold;
   margin-bottom: 12px;
 }
 .poster__energy-table li {
@@ -1212,7 +1220,8 @@ ul {
   display: flex;
   position: relative;
   max-width: 15.5ch;
-  font-family: "Marydale Black";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
   font-size: 12px;
 }
 .poster__gas-info--left span {
@@ -1222,7 +1231,8 @@ ul {
   width: 18px;
 }
 .poster__gas-info--right {
-  font-family: "Marydale Bold";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
   line-height: 1.8;
   padding-left: 5px;
 }
@@ -1233,17 +1243,18 @@ ul {
   position: absolute;
   bottom: 40px;
   line-height: 1.2;
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 
 .poster__facts-text {
   position: absolute;
 }
 .poster__facts-text p {
-  font-family: "Marydale Bold";
+  font-weight: bold;
   font-size: 10px;
 }
 .poster__facts-text h2 {
-  font-family: "Marydale Black";
+  font-weight: 900;
   margin-bottom: 2px;
 }
 
@@ -1318,7 +1329,7 @@ ul {
   padding: 0 32px;
   font-size: 8px;
   white-space: nowrap;
-  font-family: "Marydale";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 .poster__footer-logo {
   width: 175px;

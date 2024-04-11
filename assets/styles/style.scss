@@ -7,18 +7,27 @@ $padding: 32px;
 // fonts
 @font-face {
   font-family:'Marydale';
-  src: url('../fonts/Marydale Regular.ttf') format('truetype'), url('fonts/Marydale Regular.woff') format('woff');
+  src: url('../fonts/marydale-regular.ttf') format('ttf'),
+       url('../fonts/marydale-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family:'Marydale Bold';
-  src: url('../fonts/Marydale Bold.ttf') format('truetype'), url('fonts/Marydale Bold.woff') format('woff');
-  }
+  font-family:'Marydale';
+  src: url('../fonts/marydale-bold.ttf') format('ttf'),
+       url('../fonts/marydale-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family:'Marydale Black';
-    src: url('../fonts/Marydale Black.ttf') format('truetype'), url('fonts/Marydale Black.woff') format('woff');
-  } 
+@font-face {
+  font-family:'Marydale';
+  src: url('../fonts/marydale-black.ttf') format('ttf'),
+       url('../fonts/marydale-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
 
 
 // default styling
@@ -117,7 +126,7 @@ ul {
 }
 
 .poster__info-text {
-  font-weight: 600;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   line-height: 1.1;
   width: 16ch; // changing the maximum characters on a line to make the paragraphs smaller
 }
@@ -170,7 +179,8 @@ ul {
       }
 
       &-intro {
-        font-family: 'Marydale Bold';
+        font-family: 'Marydale', Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
         font-size: 0.78rem;
       }
     }
@@ -182,7 +192,7 @@ ul {
     width: 16ch;
     padding-left: $padding;
     p {
-      font-family: 'Marydale Bold';
+      font-family: 'Marydale', Georgia, 'Times New Roman', Times, serif;
     }
   }
 }
@@ -213,7 +223,8 @@ ul {
     transform: rotate(7deg);
 
     h2 {
-      font-family: 'Marydale Bold';
+      font-family: 'Marydale', Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
     }
 
     &--top {
@@ -232,10 +243,10 @@ ul {
     top: 35px;
     right: 14px;
     padding-right: $padding;
-    font-family: 'Marydale';
+    font-family: 'Marydale', Georgia, 'Times New Roman', Times, serif;
     
     h3 {
-      font-family: 'Marydale Bold';
+      font-weight: bold;
       margin-bottom: 12px;
     }
 
@@ -306,7 +317,8 @@ ul {
     display: flex;
     position: relative;
     max-width: 15.5ch;
-    font-family: 'Marydale Black';
+    font-family: 'Marydale', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
     font-size: 12px;
 
     span {
@@ -319,7 +331,8 @@ ul {
   }
 
   &--right {
-    font-family: 'Marydale Bold';
+    font-family: 'Marydale', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
     line-height: 1.8;
     padding-left: 5px;
   }
@@ -331,18 +344,19 @@ ul {
   position: absolute;
   bottom: 40px;
   line-height: 1.2;
+  font-family: 'Marydale', Georgia, 'Times New Roman', Times, serif;
 }
 
 .poster__facts-text {
   position: absolute;
 
   p {
-    font-family: 'Marydale Bold';
+    font-weight: bold;
     font-size: 10px;
   }
 
   h2 {
-    font-family: 'Marydale Black';
+    font-weight: 900;
     margin-bottom: 2px;
 
   }
@@ -432,7 +446,7 @@ ul {
   padding: 0 $padding;
   font-size: 8px;
   white-space: nowrap;
-  font-family: 'Marydale';
+  font-family: 'Marydale', Georgia, 'Times New Roman', Times, serif;
 
   &-logo {
     width: 175px;

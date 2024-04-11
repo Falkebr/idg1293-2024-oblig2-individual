@@ -31,7 +31,7 @@ $padding: 32px;
 body {
   padding: 0 100px;
   background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   line-height: 1;
 }
 
@@ -39,7 +39,6 @@ p,
 h2,
 h3 {
   font-size: 12px;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -53,7 +52,6 @@ ul {
 }
 
 .keyword {
-  font-family: 'Open Sans', 'Ariel';
   font-size: 1rem;
   font-weight: 800;
 }
@@ -119,7 +117,6 @@ ul {
 }
 
 .poster__info-text {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.1;
   width: 16ch; // changing the maximum characters on a line to make the paragraphs smaller
@@ -159,7 +156,6 @@ ul {
 
     .poster__headline {
       h1 {
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         font-weight: 800;
         font-size: 1.55rem;
         color: colors.$dark-blue;
@@ -347,12 +343,12 @@ ul {
 
   h2 {
     font-family: 'Marydale Black';
-    font-size: 12px;
     margin-bottom: 2px;
 
   }
 }
 
+// trying to make the text span the most similar way possible to the original poter
 .fact {
   &1 {
     top: 40px;
@@ -411,30 +407,6 @@ ul {
       width: 20ch;
     }
   }
-}
-
-// styling to make the two svg elements become one unit
-// a less optimal way...
-#earth {
-  position: absolute;
-  bottom: 120px;
-  right: 155px;
-}
-
-#earth-container {
-  position: relative;
-  width: 185px;
-}
-
-#earth-main {
-  max-width: 140px;
-  margin-right: 5px;
-}
-
-#earth-bubble {
-  width: 68px;
-  position: absolute;
-  top: -10px;
 }
 
 .qr-code {
@@ -520,9 +492,6 @@ ul {
 }
 
 @media (width <=600px) {
-  body {
-    padding: 0;
-  }
 
   .center {
     display: block;

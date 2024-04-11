@@ -7,20 +7,19 @@ $padding: 32px;
 // fonts
 @font-face {
   font-family:'Marydale';
-  src: url('fonts/Marydale Regular.ttf') format('truetype'), url('fonts/Marydale Regular.woff') format('woff');
+  src: url('../fonts/Marydale Regular.ttf') format('truetype'), url('fonts/Marydale Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family:'Marydale';
-  src: url('fonts/Marydale Bold.ttf') format('truetype'), url('fonts/Marydale Bold.woff') format('woff');
-  font-weight: bold;
-}
+  font-family:'Marydale Bold';
+  src: url('../fonts/Marydale Bold.ttf') format('truetype'), url('fonts/Marydale Bold.woff') format('woff');
+  }
 
-@font-face {
-  font-family:'Open Sans';
-  src: url('fonts/Open Sans Bold.ttf') format('truetype'), url('fonts/Open Sans Bold.woff') format('woff');
-  font-weight: bold;
-}
+  @font-face {
+    font-family:'Marydale Black';
+    src: url('../fonts/Marydale Black.ttf') format('truetype'), url('fonts/Marydale Black.woff') format('woff');
+  } 
+
 
 // default styling
 * {
@@ -33,12 +32,12 @@ body {
   padding: 0 100px;
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: -0.5px;
 }
 
 p,
 h2 {
   font-size: 14px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -52,26 +51,28 @@ ul {
 }
 
 .keyword {
-  font-size: 1.2rem;
+  font-family: 'Open Sans', 'Ariel';
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 
-// positioning of the .svg curves for the background
+// positioning of the svg curves for the background
 .curve {
   position: absolute;
   left: 0;
 
   &--blue {
-    top: -2%;
+    top: -24%;
     z-index: -1;
   }
 
   &--white {
-    top: 8%;
+    top: -15%;
     z-index: -3;
   }
 
   &--pink {
-    bottom: 0;
+    bottom: 40px;
     z-index: -2;
 
     &-path {
@@ -116,8 +117,11 @@ ul {
 }
 
 .poster__info-text {
-  font-size: 1rem;
-  max-width: 20ch; // changing the maximum characters on a line to make the paragraphs smaller
+  font-size: 0.7rem;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  max-width: 27ch; // changing the maximum characters on a line to make the paragraphs smaller
 }
 
 .poster__info-text--first,
@@ -138,7 +142,7 @@ ul {
   position: relative;
   top: 0;
   left: 0;
-  height: 30%;
+  height: 40%;
   width: 100%;
 
   &-text {
@@ -147,29 +151,40 @@ ul {
     justify-content: space-between;
     position: absolute;
     top: 2px;
-    padding: $padding;
+    padding: $padding 26px 0 $padding;
     width: 100%;
 
     .poster__headline {
       h1 {
-        font-size: 1.6rem;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 1.55rem;
+        color: colors.$dark-blue;
         line-height: 1;
         width: 200px;
         word-wrap: break-word; // to get the h1 to span two lines
-        margin-bottom: 5px;
+        margin-bottom: 9px;
+
+        span {
+          color: colors.$green;
+        }
       }
 
       &-intro {
-        font-size: 0.85rem;
+        font-family: 'Marydale Bold';
+        font-size: 0.78rem;
       }
     }
   }
 
   .poster__aside-text {
     position: absolute;
-    bottom: 20px;
-    max-width: 19ch;
+    top: 195px;
+    width: 18ch;
     padding-left: $padding;
+    p {
+      font-family: 'Marydale Bold';
+    }
   }
 }
 
@@ -183,7 +198,7 @@ ul {
   position: relative;
   bottom: 0;
   left: 0;
-  height: 70%;
+  height: 60%;
 }
 
 // the text section about "energy"
@@ -194,6 +209,10 @@ ul {
     position: absolute;
     top: 110px;
     left: 160px;
+
+    h2 {
+      font-family: 'Marydale Bold';
+    }
 
     &--top {
       display: block;
@@ -211,6 +230,7 @@ ul {
     top: 160px;
     right: 0;
     padding-right: $padding;
+    font-family: 'Marydale';
 
     // "draw" with CSS learnt from class to make a slighly bent line
     &::before {
@@ -237,6 +257,7 @@ ul {
 
     h3 {
       font-size: 10px;
+      font-family: 'Marydale Bold';
       margin-bottom: 10px;
     }
 
@@ -277,6 +298,7 @@ ul {
     display: flex;
     position: relative;
     max-width: 20ch;
+    font-family: 'Marydale Black';
     font-size: 12px;
 
     span {
@@ -286,6 +308,10 @@ ul {
     img {
       width: 20px;
     }
+  }
+
+  &--right {
+    font-family: 'Marydale Bold';
   }
 }
 
@@ -299,13 +325,14 @@ ul {
 .poster__facts-text {
   position: absolute;
   width: 12ch;
-  padding-left: $padding;
 
   p {
+    font-family: 'Marydale Bold';
     font-size: 10px;
   }
 
   h2 {
+    font-family: 'Marydale Black';
     font-size: 11px;
   }
 }
@@ -406,6 +433,7 @@ ul {
   padding: 0 $padding;
   font-size: 8px;
   white-space: nowrap;
+  font-family: 'Marydale';
 
   &-logo {
     width: 175px;

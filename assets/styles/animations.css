@@ -428,10 +428,7 @@
 }
 
 @keyframes bubblePop {
-  0% {
-    r: var(--initial-radius);
-  }
-  80% {
+  0%, 80% {
     r: var(--initial-radius);
   }
   100% {

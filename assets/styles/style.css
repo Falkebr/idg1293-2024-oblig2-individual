@@ -428,10 +428,7 @@
 }
 
 @keyframes bubblePop {
-  0% {
-    r: var(--initial-radius);
-  }
-  80% {
+  0%, 80% {
     r: var(--initial-radius);
   }
   100% {
@@ -977,7 +974,7 @@
 
 body {
   padding: 0 100px;
-  background-color: black;
+  background-color: #ffffff;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1;
 }
@@ -1042,7 +1039,7 @@ ul {
   position: relative;
   height: 841px;
   width: 594px;
-  background-color: #D9F3FA;
+  background-color: #d9f3fa;
   z-index: -4;
 }
 
@@ -1054,9 +1051,10 @@ ul {
 }
 
 .poster__info-text {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1.1;
   width: 16ch;
+  font-weight: 600;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .poster__info-text--first,
@@ -1094,14 +1092,14 @@ ul {
 .poster__header-text .poster__headline h1 {
   font-weight: 800;
   font-size: 1.55rem;
-  color: #0E5BA5;
+  color: #0e5ba5;
   line-height: 1;
   width: 200px;
   word-wrap: break-word;
   margin-bottom: 9px;
 }
 .poster__header-text .poster__headline h1 span {
-  color: #0FA15C;
+  color: #0fa15c;
 }
 .poster__header-text .poster__headline-intro {
   font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
@@ -1131,9 +1129,10 @@ ul {
   height: 60%;
 }
 
-.poster__energy-headline, .poster__energy-table {
+.poster__energy-headline,
+.poster__energy-table {
   position: absolute;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .poster__energy-headline {
@@ -1318,14 +1317,14 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #0E5BA5;
+  background-color: #0e5ba5;
   height: 40px;
   width: 100%;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0 32px;
   font-size: 8px;
   white-space: nowrap;
@@ -1349,7 +1348,7 @@ ul {
 }
 .poster__footer-download a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .poster__footer-download::before, .poster__footer-download::after {
   content: "";

@@ -553,11 +553,9 @@
   animation: waveAnimation 1.5s linear infinite alternate;
 }
 
+// to make the "bubbles" (circle svgs) shrink by basing it on a custom property that stores the radius of them
 @keyframes bubblePop {
-  0% {
-    r: var(--initial-radius);
-  }
-
+  0%,
   80% {
     r: var(--initial-radius);
   }
@@ -901,7 +899,7 @@
   transform: translateX(-30px);
 }
 
-// for the multiple carbon gas lumps 
+// for the multiple carbon gas lumps
 #gasClouds {
   position: absolute;
   width: 30%;

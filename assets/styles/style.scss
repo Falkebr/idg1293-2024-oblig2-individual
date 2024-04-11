@@ -4,6 +4,23 @@
 // variables
 $padding: 32px;
 
+// fonts
+@font-face {
+  font-family:'Marydale';
+  src: url('../fonts/Marydale Regular.ttf') format('truetype'), url('fonts/Marydale Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Marydale Bold';
+  src: url('../fonts/Marydale Bold.ttf') format('truetype'), url('fonts/Marydale Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family:'Marydale Black';
+    src: url('../fonts/Marydale Black.ttf') format('truetype'), url('fonts/Marydale Black.woff') format('woff');
+  } 
+
+
 // default styling
 * {
   box-sizing: border-box;
@@ -15,12 +32,14 @@ body {
   padding: 0 100px;
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: -0.5px;
+  line-height: 1;
 }
 
 p,
-h2 {
-  font-size: 14px;
+h2,
+h3 {
+  font-size: 12px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -34,31 +53,33 @@ ul {
 }
 
 .keyword {
-  font-size: 1.2rem;
+  font-family: 'Open Sans', 'Ariel';
+  font-size: 1rem;
+  font-weight: 800;
 }
 
-// positioning of the .svg curves for the background
+// positioning of the svg curves for the background
 .curve {
   position: absolute;
   left: 0;
 
   &--blue {
-    top: -2%;
+    top: -24%;
     z-index: -1;
   }
 
   &--white {
-    top: 8%;
+    top: -15%;
     z-index: -3;
   }
 
   &--pink {
-    bottom: 0;
+    bottom: 40px;
     z-index: -2;
 
     &-path {
       fill: none;
-      top: 220px;
+      top: 90px;
       z-index: 5;
     }
   }
@@ -69,8 +90,9 @@ ul {
 }
 
 .bubble {
-  width: 100%;
-  height: 200px;
+  position: absolute;
+  top: -80px;
+  max-width: 100%;
   filter: url(#blur);
 }
 
@@ -88,18 +110,19 @@ ul {
 
 // to override the specificiy of 'p'
 .text--small {
-
   p,
   span,
   a,
   li {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
 .poster__info-text {
-  font-size: 1rem;
-  max-width: 20ch; // changing the maximum characters on a line to make the paragraphs smaller
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  width: 16ch; // changing the maximum characters on a line to make the paragraphs smaller
 }
 
 .poster__info-text--first,
@@ -109,7 +132,9 @@ ul {
 }
 
 .poster__info-text--first {
-  top: 150px;
+  top: 24px;
+  width: 19ch;
+  line-height: 1.2;
 }
 
 .poster__info-text--second {
@@ -120,7 +145,7 @@ ul {
   position: relative;
   top: 0;
   left: 0;
-  height: 30%;
+  height: 40%;
   width: 100%;
 
   &-text {
@@ -129,33 +154,44 @@ ul {
     justify-content: space-between;
     position: absolute;
     top: 2px;
-    padding: $padding;
+    padding: 34px $padding 0;
     width: 100%;
 
     .poster__headline {
       h1 {
-        font-size: 1.6rem;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 1.55rem;
+        color: colors.$dark-blue;
         line-height: 1;
         width: 200px;
         word-wrap: break-word; // to get the h1 to span two lines
-        margin-bottom: 5px;
+        margin-bottom: 9px;
+
+        span {
+          color: colors.$green;
+        }
       }
 
       &-intro {
-        font-size: 0.85rem;
+        font-family: 'Marydale Bold';
+        font-size: 0.78rem;
       }
     }
   }
 
   .poster__aside-text {
     position: absolute;
-    bottom: 20px;
-    max-width: 19ch;
+    top: 195px;
+    width: 16ch;
     padding-left: $padding;
+    p {
+      font-family: 'Marydale Bold';
+    }
   }
 }
 
-.big-network {
+#big-network {
   position: absolute;
   width: 100%;
   top: 1px;
@@ -165,17 +201,24 @@ ul {
   position: relative;
   bottom: 0;
   left: 0;
-  height: 70%;
+  height: 60%;
 }
 
 // the text section about "energy"
-.poster__energy {
-  color: colors.$white;
 
-  &-headline {
-    position: absolute;
-    top: 110px;
-    left: 160px;
+.poster__energy-headline, .poster__energy-table {
+  position: absolute;
+  color: colors.$white;
+}
+
+  .poster__energy-headline {
+    top: -7px;
+    left: 145px;
+    transform: rotate(7deg);
+
+    h2 {
+      font-family: 'Marydale Bold';
+    }
 
     &--top {
       display: block;
@@ -187,67 +230,75 @@ ul {
     }
   }
 
-  &-table {
+  .poster__energy-table {
     display: flex;
-    position: absolute;
-    top: 160px;
-    right: 0;
+    justify-content: space-between;
+    top: 35px;
+    right: 14px;
     padding-right: $padding;
-
-    // "draw" with CSS learnt from class to make a slighly bent line
-    &::before {
-      content: "";
-      position: absolute;
-      border-top: 3px solid white;
-      border-radius: 2px;
-      right: 87px;
-      top: 20%;
-      width: 150px;
-      transform: rotate(-0.9deg);
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      border-top: 3px solid white;
-      border-radius: 2px;
-      right: 28px;
-      top: 20%;
-      width: 61.5px;
-      transform: rotate(2.3deg);
-    }
-
+    font-family: 'Marydale';
+    
     h3 {
-      font-size: 10px;
-      margin-bottom: 10px;
+      font-family: 'Marydale Bold';
+      margin-bottom: 12px;
+    }
+
+    li {
+      line-height: 1.2;
     }
 
     &--right {
-      padding-right: 10px;
+      margin-right: 23px;
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 100px;
-        border-left: 3px solid white;
-        border-radius: 1px;
-        height: 140%;
-      }
-
-      ul {
-        padding-right: 50px;
+      h3 {
+        margin-bottom: 16px;
       }
     }
   }
-}
+
+
+
+  // "draw" with CSS learnt from class to make a slighly bent line
+  .poster__energy-draw {
+      position: absolute;
+      top: 25px;
+      border-left: 3px solid white;
+      border-radius: 1px;
+      height: 120px;
+      right: 95px;
+      width: 3px;
+      padding-right: $padding;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 3px solid white;
+    border-radius: 2px;
+    right: 0px;
+    top: 20%;
+    width: 154px;
+    transform: rotate(-0.9deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid white;
+    border-radius: 2px;
+    right: -57px;
+    top: 20%;
+    width: 58px;
+    transform: rotate(2.3deg);
+  }
+
+    }
 
 // the small text section about "gas"
 .poster__gas-info {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 230px;
+  top: 110px;
   padding-left: $padding;
 
   &--left,
@@ -258,81 +309,101 @@ ul {
   &--left {
     display: flex;
     position: relative;
-    max-width: 20ch;
+    max-width: 15.5ch;
+    font-family: 'Marydale Black';
     font-size: 12px;
 
     span {
-      padding-top: 5px;
+      padding-top: 10px;
     }
 
     img {
-      width: 20px;
+      width: 18px;
     }
+  }
+
+  &--right {
+    font-family: 'Marydale Bold';
+    line-height: 1.8;
+    padding-left: 5px;
   }
 }
 
 .poster__facts {
   width: 100%;
-  height: 275px;
+  height: 315px;
   position: absolute;
   bottom: 40px;
 }
 
 .poster__facts-text {
   position: absolute;
-  width: 12ch;
-  padding-left: $padding;
 
   p {
+    font-family: 'Marydale Bold';
     font-size: 10px;
   }
 
   h2 {
-    font-size: 11px;
+    font-family: 'Marydale Black';
+    font-size: 12px;
+    margin-bottom: 2px;
+
   }
 }
 
 .fact {
   &1 {
-    top: 35px;
+    top: 45px;
     left: 200px;
+    width: 10ch;
   }
 
   &2 {
-    left: 325px;
+    top: 4px;
+    left: 340px;
+    width: 9ch;
   }
 
   &3 {
     right: $padding;
-    top: 28px;
+    top: 60px;
+    width: 8ch;
 
     h2 {
-      width: 10ch;
+      width: 8ch;
+      margin-bottom: 4px;
     }
   }
 
   &4 {
     right: $padding;
-    bottom: 92px;
-    width: 17ch;
+    bottom: 100px;
+    width: 11ch;
+
+    h2 {
+      width: 13ch;
+    }
   }
 
   &5 {
-    right: 150px;
-    bottom: 20px;
+    right: 100px;
+    bottom: 25px;
+    width: 11ch;
   }
 
   &6 {
-    left: 120px;
-    bottom: 20px;
+    left: 145px;
+    bottom: 25px;
+    width: 10ch;
   }
 
   &7 {
     padding-left: $padding;
-    top: 115px;
+    top: 130px;
 
     p {
-      width: 15ch;
+      width: 14ch;
     }
 
     h2 {
@@ -345,8 +416,8 @@ ul {
 // a less optimal way...
 #earth {
   position: absolute;
-  bottom: 110px;
-  right: 120px;
+  bottom: 130px;
+  right: 135px;
 }
 
 #earth-container {
@@ -355,21 +426,21 @@ ul {
 }
 
 #earth-main {
-  max-width: 130px;
+  max-width: 140px;
   margin-right: 5px;
 }
 
 #earth-bubble {
-  max-width: 68px;
+  width: 68px;
   position: absolute;
-  top: -15px;
+  top: -10px;
 }
 
 .qr-code {
   position: absolute;
-  max-width: 80px;
+  max-width: 70px;
   bottom: 40px;
-  right: 0;
+  right: 4px;
   margin: 5px;
 }
 
@@ -388,6 +459,7 @@ ul {
   padding: 0 $padding;
   font-size: 8px;
   white-space: nowrap;
+  font-family: 'Marydale';
 
   &-logo {
     width: 175px;

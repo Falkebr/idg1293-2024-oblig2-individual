@@ -242,8 +242,8 @@
 }
 #flame {
   position: absolute;
-  top: 170px;
-  right: 115px;
+  top: 60px;
+  right: 128px;
   width: 70px;
 }
 #flame .cls-1 {
@@ -535,4 +535,318 @@
 
 #thinking-bubble {
   animation: showThinkingCloud 7s ease-in-out infinite;
+}
+
+.sun-container {
+  position: absolute;
+  left: 120px;
+  bottom: 250px;
+  width: 220px;
+  animation: updown 5s infinite alternate;
+}
+
+.sun-body {
+  position: absolute;
+  width: 50%;
+}
+
+.sun-rays {
+  width: 50%;
+  position: absolute;
+  animation: spin 50s infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.moneybag {
+  position: absolute;
+  left: 280px;
+  bottom: 55px;
+  width: 10%;
+  animation: updown 3s infinite alternate ease-in-out;
+}
+.moneybag .cls-1 {
+  fill: #efe77f;
+}
+.moneybag .cls-1, .moneybag .cls-2, .moneybag .cls-3 {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 4.6px;
+}
+.moneybag .cls-2 {
+  fill: #ede6a1;
+}
+.moneybag .cls-3 {
+  fill: #fff;
+}
+
+@keyframes flapLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes flapRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(130px);
+  }
+}
+.money-bag {
+  animation: upDown 3s ease-in-out infinite alternate;
+}
+
+.left-wing {
+  transform-origin: left;
+  animation: flapLeft 0.3s ease-in-out infinite alternate;
+  transform: translate(30px);
+}
+
+.right-wing {
+  transform-origin: right;
+  animation: flapRight 0.3s ease-in-out infinite alternate;
+  transform: translateX(-30px);
+}
+
+#gasClouds {
+  position: absolute;
+  width: 30%;
+  left: 162px;
+  top: 30px;
+}
+
+.gasCloudOne .cls-1, .gasCloudOne .cls-3, .gasCloudOne .cls-4, .gasCloudTwo .cls-1, .gasCloudTwo .cls-3, .gasCloudTwo .cls-4, .gasCloudThree .cls-1, .gasCloudThree .cls-3, .gasCloudThree .cls-4, .gasCloudFour .cls-1, .gasCloudFour .cls-3, .gasCloudFour .cls-4, .gasCloudFive .cls-1, .gasCloudFive .cls-3, .gasCloudFive .cls-4 {
+  stroke-width: 0px;
+}
+.gasCloudOne .cls-2, .gasCloudOne .cls-5, .gasCloudTwo .cls-2, .gasCloudTwo .cls-5, .gasCloudThree .cls-2, .gasCloudThree .cls-5, .gasCloudFour .cls-2, .gasCloudFour .cls-5, .gasCloudFive .cls-2, .gasCloudFive .cls-5 {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+}
+.gasCloudOne .cls-3, .gasCloudTwo .cls-3, .gasCloudThree .cls-3, .gasCloudFour .cls-3, .gasCloudFive .cls-3 {
+  fill: #231f20;
+}
+.gasCloudOne .cls-4, .gasCloudTwo .cls-4, .gasCloudThree .cls-4, .gasCloudFour .cls-4, .gasCloudFive .cls-4 {
+  fill: #a1cf6d;
+}
+.gasCloudOne .cls-5, .gasCloudTwo .cls-5, .gasCloudThree .cls-5, .gasCloudFour .cls-5, .gasCloudFive .cls-5 {
+  fill: #fff;
+  stroke-width: 4.6px;
+}
+
+.gasCloudOne {
+  animation: moveAroundOne 8s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.gasCloudOneBody {
+  transform-origin: 85% 65%;
+  animation: cloud-behaviorOne 3s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveAroundOne {
+  0% {
+    transform: translate(-5px, 7px);
+  }
+  50% {
+    transform: translate(-30px, 3px);
+  }
+  100% {
+    transform: translate(21px, 7px);
+  }
+}
+@keyframes cloud-behaviorOne {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(20deg);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
+.gasCloudTwo {
+  animation: moveAroundTwo 5s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.gasCloudTwoBody {
+  transform-origin: 35% 20%;
+  animation: cloud-behaviorTwo 2s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveAroundTwo {
+  0% {
+    transform: translate(-15px, 15px);
+  }
+  25% {
+    transform: translate(0px, 7px);
+  }
+  50% {
+    transform: translate(4px, -3px);
+  }
+  75% {
+    transform: translate(4px, 9px);
+  }
+  100% {
+    transform: translate(5px, 14px);
+  }
+}
+@keyframes cloud-behaviorTwo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.85) rotate(5deg);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.gasCloudThree {
+  animation: moveAroundThree 2s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.gasCloudThreeBody {
+  animation: cloudBehaviorThree 4s infinite alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: 10% 35%;
+}
+
+@keyframes moveAroundThree {
+  0% {
+    transform: translate(4px, 7px);
+  }
+  50% {
+    transform: translate(7px, -2px);
+  }
+  100% {
+    transform: translate(18px, -4px);
+  }
+}
+@keyframes cloudBehaviorThree {
+  0% {
+    transform: rotate(20deg) scale(1.2);
+  }
+}
+.gasCloudFour {
+  animation: moveAroundFour 6s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.gasCloudFourBody {
+  animation: cloudBehaviorFour 2s infinite alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: 45% 85%;
+}
+
+@keyframes moveAroundFour {
+  0% {
+    transform: translate(-15px, -2px);
+  }
+  25% {
+    transform: translate(0px, -7px);
+  }
+  50% {
+    transform: translate(4px, -3px);
+  }
+  75% {
+    transform: translate(4px, -9px);
+  }
+  100% {
+    transform: translate(5px, -3px);
+  }
+}
+@keyframes cloudBehaviorFour {
+  0% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(-20deg) scale(0.9);
+  }
+}
+.gasCloudFive {
+  animation: moveAroundFive 3s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.gasCloudFiveBody {
+  animation: cloudBehaviorFive 2s infinite alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 40%;
+}
+
+@keyframes moveAroundFive {
+  0% {
+    transform: translate(5px, -15px);
+  }
+  25% {
+    transform: translate(-5px, -7px);
+  }
+  50% {
+    transform: translate(0px, 5px);
+  }
+  75% {
+    transform: translate(4px, 9px);
+  }
+  100% {
+    transform: translate(5px, 14px);
+  }
+}
+@keyframes cloudBehaviorFive {
+  0% {
+    transform: rotate(-20deg) scale(1.1);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+}
+.arrow-wiggly {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 4.6px;
+}
+
+#arrow-wiggly1 {
+  position: absolute;
+  width: 38px;
+  top: -48px;
+  right: 115px;
+}
+
+#arrow-wiggly2 {
+  position: absolute;
+  width: 102px;
+  top: 50px;
+  right: 220px;
 }/*# sourceMappingURL=animations.css.map */

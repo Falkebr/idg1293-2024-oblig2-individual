@@ -239,8 +239,8 @@
 // "flame" svg
 #flame {
   position: absolute;
-  top: 170px;
-  right: 115px;
+  top: 60px;
+  right: 128px;
   width: 70px;
 
   .cls-1 {
@@ -277,8 +277,6 @@ d: path("M51.59,163.51c-26.82-5.76-54.47-26.27-48.46-61.13,3.03-17.56,58.11-35.9
 transform: rotate(5deg) translateX(5px) scale(0.9);
 d: path("M55.37,167c-23.07-4.62-67.48-22.71-48.45-61.13,10.07-20.35,32.98-17.63,38.61-36.31,5.43-16.22-22.65-9.65-19.68-24.62,8.44-42.64,17.49-29.36,15.49-12.08-1.68,14.53,26.3,18,33.77,27.1,12.16,14.83,16.16-45.01,16.63-47.51,1.75-9.38,17-17.17,10.79.07-4.72,13.1,10.95,15.97,14.85,26.11,1.43,7.29-5.76,25.35,9.2,15.66,9.64-4.95,3.5-18.14,11.34-23.09,6.38-4.03,13.73,14.81,10.17,23.59-3.1,14.94-17.11,30.4-9.11,45.01,13.15,24.01-25.32,14.59-23.36,33.25,2.06,19.68-11.79,37.12-41.66,34.3-6.23-.59-12.44.87-18.58-.36Z");
 }
-
-
 
 70% {
 transform: scale(0.8);
@@ -412,7 +410,6 @@ animation: flameShift 0.8s infinite;
   animation: waveAnimation 1.5s linear infinite alternate;
 }
 
-//
 @keyframes bubblePop {
     0% {
         r: var(--initial-radius);
@@ -603,4 +600,333 @@ animation: flameShift 0.8s infinite;
     animation: showThinkingCloud 7s ease-in-out infinite;
   }
   
+  
+  .sun-container {
+    position: absolute;
+    left: 120px;
+    bottom: 250px;
+    width: 220px;
+    animation: updown 5s infinite alternate;
+  }
+  
+  .sun-body {
+    position: absolute;
+    width: 50%;
+  }
+  
+  .sun-rays {
+    width: 50%;
+    position: absolute;
+    animation: spin 50s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes spin {
+    0% {transform: rotate(360deg)};
+  }
+  
+  @keyframes updown {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(30px);
+    }
+  }
+  
+  .moneybag {
+    position: absolute;
+    left: 280px;
+    bottom: 55px;
+    width: 10%;
+    animation: updown 3s infinite alternate ease-in-out;
+ 
+    .cls-1 {
+        fill: #efe77f;
+      }
+  
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 4.6px;
+      }
+  
+      .cls-2 {
+        fill: #ede6a1;
+      }
+  
+      .cls-3 {
+        fill: #fff;
+      }
+  }
+  
+  @keyframes flapLeft {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(10deg);}
+  }
+  
+  @keyframes flapRight {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-10deg);}
+  }
+  
+  @keyframes upDown {
+    0% {transform: translateY(100px);}
+    50% {transform: translateY(130px);}
+  }
+  
+  .money-bag {
+    animation: upDown 3s ease-in-out infinite alternate;
+  }
+  
+  .left-wing {
+    transform-origin: left;
+     animation: flapLeft 0.3s ease-in-out infinite alternate;
+   transform: translate(30px);
+  }
+  
+  .right-wing {
+     transform-origin: right;
+     animation: flapRight 0.3s ease-in-out infinite alternate;
+     transform: translateX(-30px);
+  
+  }
+  
+  #gasClouds {
+    position: absolute;
+    width: 30%;
+    left: 162px;
+    top: 30px;
+  }
+  
+  .gasCloudOne, .gasCloudTwo, .gasCloudThree, .gasCloudFour, .gasCloudFive {
+  
+    .cls-1, .cls-3, .cls-4 {
+      stroke-width: 0px;
+    }
+  
+    .cls-2, .cls-5 {
+      stroke: #231f20;
+      stroke-miterlimit: 10;
+    }
+  
+    .cls-3 {
+      fill: #231f20;
+    }
+  
+    .cls-4 {
+      fill: #a1cf6d;
+    }
+  
+    .cls-5 {
+      fill: #fff;
+      stroke-width: 4.6px;
+    }
+  
+  }
+  
+  .gasCloudOne {
+  animation: moveAroundOne 8s infinite alternate;
+  animation-timing-function: ease-in-out;
+  }
+  
+  .gasCloudOneBody {
+  transform-origin: 85% 65%;
+  animation: cloud-behaviorOne 3s infinite alternate;
+  animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes moveAroundOne {
+  0% {
+  transform: translate(-5px, 7px);
+  }
+  50% {
+  transform: translate(-30px, 3px);
+  }
+  100% {
+  transform: translate(21px, 7px);
+  }
+  }
+  
+  @keyframes cloud-behaviorOne {
+  0% {
+     transform: scale(0.9) rotate(0deg);
+  }
+  50% {
+  transform: scale(1) rotate(20deg);
+  }
+    100% {
+  transform: scale(0.85);
+  }
+  }
+  
+  .gasCloudTwo {
+  animation: moveAroundTwo 5s infinite alternate;
+  animation-timing-function: ease-in-out;
+  }
+  
+  .gasCloudTwoBody {
+  transform-origin: 35% 20%;
+  animation: cloud-behaviorTwo 2s infinite alternate;
+  animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes moveAroundTwo {
+  0% {
+  transform: translate(-15px, 15px);
+  }
+  25% {
+  transform: translate(0px, 7px);
+  }
+  50% {
+  transform: translate(4px, -3px);
+  }
+  75% {
+  transform: translate(4px, 9px);
+  }
+  100% {
+  transform: translate(5px, 14px);
+  }
+  }
+  
+  @keyframes cloud-behaviorTwo {
+  0% {
+     transform: scale(1);
+  }
+  50% {
+  transform: scale(0.85) rotate(5deg);
+  }
+    100% {
+  transform: scale(0.9);
+  }
+  }
+  
+  .gasCloudThree {
+  animation: moveAroundThree 2s infinite alternate;
+  animation-timing-function: ease-in-out;
+  }
+  
+  .gasCloudThreeBody {
+  animation: cloudBehaviorThree 4s infinite alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: 10% 35%;
+  }
+  
+  @keyframes moveAroundThree {
+  0% {
+  transform: translate(4px, 7px);
+  }
+  50% {
+  transform: translate(7px, -2px);
+  }
+  100% {
+  transform: translate(18px, -4px);
+  }
+  }
+  
+  @keyframes cloudBehaviorThree {
+  0% {
+  transform: rotate(20deg) scale(1.2);
+  }
+  }
+  
+  .gasCloudFour {
+  animation: moveAroundFour 6s infinite alternate;
+  animation-timing-function: ease-in-out;
+  }
+  
+  .gasCloudFourBody {
+  animation: cloudBehaviorFour 2s infinite alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: 45% 85%;
+  }
+  
+  @keyframes moveAroundFour {
+  0% {
+  transform: translate(-15px, -2px);
+  }
+  25% {
+  transform: translate(0px, -7px);
+  }
+  50% {
+  transform: translate(4px, -3px);
+  }
+  75% {
+  transform: translate(4px, -9px);
+  }
+  100% {
+  transform: translate(5px, -3px);
+  }
+  }
+  
+  @keyframes cloudBehaviorFour {
+  0% {
+  transform: rotate(40deg);
+  }
+  50% {
+  transform: rotate(-20deg) scale(0.9);
+  }
+  }
+  
+  .gasCloudFive {
+  animation: moveAroundFive 3s infinite alternate;
+  animation-timing-function: ease-in-out;
+  }
+  
+  .gasCloudFiveBody {
+  animation: cloudBehaviorFive 2s infinite alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 40%;
+  }
+  
+  @keyframes moveAroundFive {
+  0% {
+  transform: translate(5px, -15px);
+  }
+  25% {
+  transform: translate(-5px, -7px);
+  }
+  50% {
+  transform: translate(0px, 5px);
+  }
+  75% {
+  transform: translate(4px, 9px);
+  }
+  100% {
+  transform: translate(5px, 14px);
+  }
+  }
+  
+  @keyframes cloudBehaviorFive {
+  0% {
+  transform: rotate(-20deg) scale(1.1);
+  }
+  25% {
+  transform: rotate(0deg);
+  }
+  50% {
+  transform: rotate(-5deg) scale(1.1);
+  }
+  }
+
+  // styling for the wiggly arrows :)
+  .arrow-wiggly {
+    stroke: #231f20; 
+    stroke-miterlimit: 10;
+    stroke-width: 4.6px;
+  }
+
+  #arrow-wiggly1 {
+    position: absolute;
+    width: 38px;
+    top: -48px;
+    right: 115px;
+  }
+  
+  #arrow-wiggly2 {
+    position: absolute;
+    width: 102px;
+    top: 50px;
+    right: 220px;
+  }
   

@@ -40,7 +40,6 @@ $padding: 32px;
 }
 
 body {
-  padding: 0 100px;
   background-color: colors.$white;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1;
@@ -496,12 +495,6 @@ ul {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-  }
-}
-
-@media (width <=800px) {
-  body {
-    padding: 0;
   }
 }
 

@@ -1,19 +1,61 @@
-#big-network .cls-1, #big-network .cls-2, #big-network .cls-3, #big-network .cls-4, #big-network .cls-5, #big-network .cls-6, #big-network .cls-7, #big-network .cls-8 {
+#big-network .cls-1,
+#big-network .cls-2,
+#big-network .cls-3,
+#big-network .cls-4,
+#big-network .cls-5,
+#big-network .cls-6,
+#big-network .cls-7,
+#big-network .cls-8 {
   stroke-width: 0px;
 }
-#big-network .cls-1, #big-network .cls-9 {
+#big-network .cls-1,
+#big-network .cls-9 {
   fill: #231f20;
 }
-#big-network .cls-10, #big-network .cls-11, #big-network .cls-12, #big-network .cls-13, #big-network .cls-14, #big-network .cls-15, #big-network .cls-16, #big-network .cls-17, #big-network .cls-18, #big-network .cls-19, #big-network .cls-20, #big-network .cls-21, #big-network .cls-22, #big-network .cls-23, #big-network .cls-9 {
+#big-network .cls-10,
+#big-network .cls-11,
+#big-network .cls-12,
+#big-network .cls-13,
+#big-network .cls-14,
+#big-network .cls-15,
+#big-network .cls-16,
+#big-network .cls-17,
+#big-network .cls-18,
+#big-network .cls-19,
+#big-network .cls-20,
+#big-network .cls-21,
+#big-network .cls-22,
+#big-network .cls-23,
+#big-network .cls-9 {
   stroke-miterlimit: 10;
 }
-#big-network .cls-10, #big-network .cls-12, #big-network .cls-13, #big-network .cls-14, #big-network .cls-16, #big-network .cls-17, #big-network .cls-18, #big-network .cls-19, #big-network .cls-20, #big-network .cls-21, #big-network .cls-23, #big-network .cls-9 {
+#big-network .cls-10,
+#big-network .cls-12,
+#big-network .cls-13,
+#big-network .cls-14,
+#big-network .cls-16,
+#big-network .cls-17,
+#big-network .cls-18,
+#big-network .cls-19,
+#big-network .cls-20,
+#big-network .cls-21,
+#big-network .cls-23,
+#big-network .cls-9 {
   stroke: #231f20;
 }
-#big-network .cls-10, #big-network .cls-12, #big-network .cls-13, #big-network .cls-15, #big-network .cls-18, #big-network .cls-19, #big-network .cls-20, #big-network .cls-21, #big-network .cls-9 {
+#big-network .cls-10,
+#big-network .cls-12,
+#big-network .cls-13,
+#big-network .cls-15,
+#big-network .cls-18,
+#big-network .cls-19,
+#big-network .cls-20,
+#big-network .cls-21,
+#big-network .cls-9 {
   stroke-width: 4.6px;
 }
-#big-network .cls-10, #big-network .cls-17 {
+#big-network .cls-10,
+#big-network .cls-17 {
   fill: #f5ec43;
 }
 #big-network .cls-2 {
@@ -22,25 +64,35 @@
 #big-network .cls-11 {
   stroke: #101416;
 }
-#big-network .cls-11, #big-network .cls-6, #big-network .cls-20, #big-network .cls-23 {
+#big-network .cls-11,
+#big-network .cls-6,
+#big-network .cls-20,
+#big-network .cls-23 {
   fill: #fff;
 }
-#big-network .cls-11, #big-network .cls-23 {
+#big-network .cls-11,
+#big-network .cls-23 {
   stroke-width: 4.6px;
 }
-#big-network .cls-12, #big-network .cls-15, #big-network .cls-22 {
+#big-network .cls-12,
+#big-network .cls-15,
+#big-network .cls-22 {
   fill: none;
 }
 #big-network .cls-13 {
   fill: #b6a69e;
 }
-#big-network .cls-3, #big-network .cls-14, #big-network .cls-21 {
+#big-network .cls-3,
+#big-network .cls-14,
+#big-network .cls-21 {
   fill: #a1cf6d;
 }
-#big-network .cls-14, #big-network .cls-17 {
+#big-network .cls-14,
+#big-network .cls-17 {
   stroke-width: 4.6px;
 }
-#big-network .cls-4, #big-network .cls-18 {
+#big-network .cls-4,
+#big-network .cls-18 {
   fill: #00b1dc;
 }
 #big-network .cls-5 {
@@ -71,19 +123,16 @@
     transform: translateX(10px);
     opacity: 1;
   }
-  15%, 100% {
+  30%, 100% {
     opacity: 0;
   }
 }
 @keyframes textAppear {
-  0%, 20% {
+  0%, 20%, 100% {
     opacity: 0;
   }
   30%, 90% {
     opacity: 1;
-  }
-  0%, 100% {
-    opacity: 0;
   }
 }
 @keyframes blackToBlueLine {
@@ -91,7 +140,7 @@
     fill: black;
   }
   20%, 60% {
-    fill: #0AFFED;
+    fill: #0affed;
   }
   60%, 100% {
     fill: black;
@@ -99,7 +148,7 @@
 }
 @keyframes blackToBlueLineDelayed {
   60%, 100% {
-    fill: #0AFFED;
+    fill: #0affed;
   }
 }
 @keyframes blackToBlueIcon {
@@ -107,7 +156,7 @@
     stroke: black;
   }
   20%, 60% {
-    stroke: #0AFFED;
+    stroke: #0affed;
   }
   60%, 100% {
     stroke: black;
@@ -118,7 +167,7 @@
     stroke: black;
   }
   60%, 100% {
-    stroke: #0AFFED;
+    stroke: #0affed;
   }
 }
 @keyframes networkSignal1 {
@@ -174,14 +223,11 @@
   }
 }
 @keyframes windowLight {
-  0% {
+  0%, 60%, 100% {
     fill: white;
   }
   20%, 60% {
     fill: yellow;
-  }
-  60%, 100% {
-    fill: white;
   }
 }
 #network-arrow {
@@ -249,7 +295,8 @@
 #flame .cls-1 {
   fill: #000;
 }
-#flame .cls-1, #flame .cls-2 {
+#flame .cls-1,
+#flame .cls-2 {
   stroke-width: 0px;
 }
 #flame .cls-3 {
@@ -381,10 +428,7 @@
 }
 
 @keyframes bubblePop {
-  0% {
-    r: var(--initial-radius);
-  }
-  80% {
+  0%, 80% {
     r: var(--initial-radius);
   }
   100% {
@@ -400,10 +444,14 @@
     transform: translateY(-20px);
   }
 }
-.moveUp {
-  animation: moveUp 1s forwards infinite, bubblePop 1s linear infinite;
+@keyframes moveUpShorter {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
-
 @keyframes moveUpHigher {
   0% {
     transform: translateY(0);
@@ -413,38 +461,41 @@
     transform: translateY(-50px);
   }
 }
-@keyframes moveUpShorter {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
-.moveUpHigher {
-  animation: moveUpHigher 1.2s forwards infinite, bubblePop 1.2s linear infinite;
+.moveUp {
+  animation: moveUp 1s forwards infinite, bubblePop 1s linear infinite;
 }
 
 .moveUpShorter {
   animation: moveUpShorter 1.2s forwards infinite, bubblePop 1.2s linear infinite;
 }
 
-@keyframes rotateEarth {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-#earth-main {
-  animation: rotateEarth 5s linear infinite;
+.moveUpHigher {
+  animation: moveUpHigher 1.2s forwards infinite, bubblePop 1.2s linear infinite;
 }
 
+#earth {
+  position: absolute;
+  bottom: 120px;
+  right: 155px;
+}
+
+#earth-container {
+  position: relative;
+  width: 185px;
+}
+
+#earth-bubble {
+  width: 68px;
+  position: absolute;
+  top: -10px;
+}
 #earth-bubble .cls-1 {
   fill: #231f20;
 }
-#earth-bubble .cls-1, #earth-bubble .cls-2, #earth-bubble .cls-3, #earth-bubble .cls-4 {
+#earth-bubble .cls-1,
+#earth-bubble .cls-2,
+#earth-bubble .cls-3,
+#earth-bubble .cls-4 {
   stroke-width: 0px;
 }
 #earth-bubble .cls-2 {
@@ -459,22 +510,41 @@
 #earth-bubble .cls-5 {
   fill: none;
 }
-#earth-bubble .cls-5, #earth-bubble .cls-6, #earth-bubble .cls-7, #earth-bubble .cls-8 {
+#earth-bubble .cls-5,
+#earth-bubble .cls-6,
+#earth-bubble .cls-7,
+#earth-bubble .cls-8 {
   stroke: #231f20;
   stroke-miterlimit: 10;
 }
-#earth-bubble .cls-5, #earth-bubble .cls-8 {
+#earth-bubble .cls-5,
+#earth-bubble .cls-8 {
   stroke-width: 4.6px;
 }
 #earth-bubble .cls-6 {
   stroke-width: 4.6px;
 }
-#earth-bubble .cls-6, #earth-bubble .cls-8 {
+#earth-bubble .cls-6,
+#earth-bubble .cls-8 {
   fill: #fff;
 }
 #earth-bubble .cls-7 {
   fill: #79a7b6;
   stroke-width: 2px;
+}
+
+@keyframes rotateEarth {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#earth-main {
+  max-width: 140px;
+  margin-right: 5px;
+  animation: rotateEarth 5s linear infinite;
 }
 
 @keyframes showDot1 {
@@ -580,7 +650,9 @@
 .moneybag .cls-1 {
   fill: #efe77f;
 }
-.moneybag .cls-1, .moneybag .cls-2, .moneybag .cls-3 {
+.moneybag .cls-1,
+.moneybag .cls-2,
+.moneybag .cls-3 {
   stroke: #231f20;
   stroke-miterlimit: 10;
   stroke-width: 4.6px;
@@ -635,37 +707,70 @@
 #gasClouds {
   position: absolute;
   width: 30%;
-  left: 162px;
+  left: 168px;
   top: 30px;
 }
 
-.gasCloudOne .cls-1, .gasCloudOne .cls-3, .gasCloudOne .cls-4, .gasCloudTwo .cls-1, .gasCloudTwo .cls-3, .gasCloudTwo .cls-4, .gasCloudThree .cls-1, .gasCloudThree .cls-3, .gasCloudThree .cls-4, .gasCloudFour .cls-1, .gasCloudFour .cls-3, .gasCloudFour .cls-4, .gasCloudFive .cls-1, .gasCloudFive .cls-3, .gasCloudFive .cls-4 {
+.gasCloudOne .cls-1,
+.gasCloudOne .cls-3,
+.gasCloudOne .cls-4,
+.gasCloudTwo .cls-1,
+.gasCloudTwo .cls-3,
+.gasCloudTwo .cls-4,
+.gasCloudThree .cls-1,
+.gasCloudThree .cls-3,
+.gasCloudThree .cls-4,
+.gasCloudFour .cls-1,
+.gasCloudFour .cls-3,
+.gasCloudFour .cls-4,
+.gasCloudFive .cls-1,
+.gasCloudFive .cls-3,
+.gasCloudFive .cls-4 {
   stroke-width: 0px;
 }
-.gasCloudOne .cls-2, .gasCloudOne .cls-5, .gasCloudTwo .cls-2, .gasCloudTwo .cls-5, .gasCloudThree .cls-2, .gasCloudThree .cls-5, .gasCloudFour .cls-2, .gasCloudFour .cls-5, .gasCloudFive .cls-2, .gasCloudFive .cls-5 {
+.gasCloudOne .cls-2,
+.gasCloudOne .cls-5,
+.gasCloudTwo .cls-2,
+.gasCloudTwo .cls-5,
+.gasCloudThree .cls-2,
+.gasCloudThree .cls-5,
+.gasCloudFour .cls-2,
+.gasCloudFour .cls-5,
+.gasCloudFive .cls-2,
+.gasCloudFive .cls-5 {
   stroke: #231f20;
   stroke-miterlimit: 10;
 }
-.gasCloudOne .cls-3, .gasCloudTwo .cls-3, .gasCloudThree .cls-3, .gasCloudFour .cls-3, .gasCloudFive .cls-3 {
+.gasCloudOne .cls-3,
+.gasCloudTwo .cls-3,
+.gasCloudThree .cls-3,
+.gasCloudFour .cls-3,
+.gasCloudFive .cls-3 {
   fill: #231f20;
 }
-.gasCloudOne .cls-4, .gasCloudTwo .cls-4, .gasCloudThree .cls-4, .gasCloudFour .cls-4, .gasCloudFive .cls-4 {
+.gasCloudOne .cls-4,
+.gasCloudTwo .cls-4,
+.gasCloudThree .cls-4,
+.gasCloudFour .cls-4,
+.gasCloudFive .cls-4 {
   fill: #a1cf6d;
 }
-.gasCloudOne .cls-5, .gasCloudTwo .cls-5, .gasCloudThree .cls-5, .gasCloudFour .cls-5, .gasCloudFive .cls-5 {
+.gasCloudOne .cls-5,
+.gasCloudTwo .cls-5,
+.gasCloudThree .cls-5,
+.gasCloudFour .cls-5,
+.gasCloudFive .cls-5 {
   fill: #fff;
   stroke-width: 4.6px;
 }
 
 .gasCloudOne {
-  animation: moveAroundOne 8s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: moveAroundOne 8s infinite ease-in-out alternate;
 }
 
 .gasCloudOneBody {
   transform-origin: 85% 65%;
-  animation: cloud-behaviorOne 3s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: cloud-behaviorOne 3s infinite alternate ease-in-out;
 }
 
 @keyframes moveAroundOne {
@@ -691,14 +796,12 @@
   }
 }
 .gasCloudTwo {
-  animation: moveAroundTwo 5s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: moveAroundTwo 5s infinite ease-in-out alternate;
 }
 
 .gasCloudTwoBody {
   transform-origin: 35% 20%;
-  animation: cloud-behaviorTwo 2s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: cloud-behaviorTwo 2s infinite ease-in-out alternate;
 }
 
 @keyframes moveAroundTwo {
@@ -730,13 +833,11 @@
   }
 }
 .gasCloudThree {
-  animation: moveAroundThree 2s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: moveAroundThree 2s infinite ease-in-out alternate;
 }
 
 .gasCloudThreeBody {
-  animation: cloudBehaviorThree 4s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: cloudBehaviorThree 4s infinite ease-in-out alternate;
   transform-origin: 10% 35%;
 }
 
@@ -757,13 +858,11 @@
   }
 }
 .gasCloudFour {
-  animation: moveAroundFour 6s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: moveAroundFour 6s ease-in-out infinite alternate;
 }
 
 .gasCloudFourBody {
-  animation: cloudBehaviorFour 2s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: cloudBehaviorFour 2s ease-in-out infinite alternate;
   transform-origin: 45% 85%;
 }
 
@@ -793,13 +892,11 @@
   }
 }
 .gasCloudFive {
-  animation: moveAroundFive 3s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: moveAroundFive 3s infinite ease-in-out alternate;
 }
 
 .gasCloudFiveBody {
-  animation: cloudBehaviorFive 2s infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation: cloudBehaviorFive 2s infinite ease-in-out alternate;
   transform-origin: 50% 40%;
 }
 
@@ -853,15 +950,21 @@
 
 @font-face {
   font-family: "Marydale";
-  src: url("../fonts/Marydale Regular.ttf") format("truetype"), url("fonts/Marydale Regular.woff") format("woff");
+  src: url("../fonts/marydale-regular.ttf") format("ttf"), url("../fonts/marydale-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Marydale Bold";
-  src: url("../fonts/Marydale Bold.ttf") format("truetype"), url("fonts/Marydale Bold.woff") format("woff");
+  font-family: "Marydale";
+  src: url("../fonts/marydale-bold.ttf") format("ttf"), url("../fonts/marydale-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Marydale Black";
-  src: url("../fonts/Marydale Black.ttf") format("truetype"), url("fonts/Marydale Black.woff") format("woff");
+  font-family: "Marydale";
+  src: url("../fonts/marydale-black.ttf") format("ttf"), url("../fonts/marydale-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 * {
   box-sizing: border-box;
@@ -871,8 +974,8 @@
 
 body {
   padding: 0 100px;
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1;
 }
 
@@ -880,7 +983,6 @@ p,
 h2,
 h3 {
   font-size: 12px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -894,7 +996,6 @@ ul {
 }
 
 .keyword {
-  font-family: "Open Sans", "Ariel";
   font-size: 1rem;
   font-weight: 800;
 }
@@ -938,7 +1039,7 @@ ul {
   position: relative;
   height: 841px;
   width: 594px;
-  background-color: #D9F3FA;
+  background-color: #d9f3fa;
   z-index: -4;
 }
 
@@ -950,10 +1051,10 @@ ul {
 }
 
 .poster__info-text {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: 600;
   line-height: 1.1;
   width: 16ch;
+  font-weight: 600;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .poster__info-text--first,
@@ -989,20 +1090,20 @@ ul {
   width: 100%;
 }
 .poster__header-text .poster__headline h1 {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 1.55rem;
-  color: #0E5BA5;
+  color: #0e5ba5;
   line-height: 1;
   width: 200px;
   word-wrap: break-word;
   margin-bottom: 9px;
 }
 .poster__header-text .poster__headline h1 span {
-  color: #0FA15C;
+  color: #0fa15c;
 }
 .poster__header-text .poster__headline-intro {
-  font-family: "Marydale Bold";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
   font-size: 0.78rem;
 }
 .poster__header .poster__aside-text {
@@ -1012,7 +1113,7 @@ ul {
   padding-left: 32px;
 }
 .poster__header .poster__aside-text p {
-  font-family: "Marydale Bold";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 
 #big-network {
@@ -1028,9 +1129,10 @@ ul {
   height: 60%;
 }
 
-.poster__energy-headline, .poster__energy-table {
+.poster__energy-headline,
+.poster__energy-table {
   position: absolute;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .poster__energy-headline {
@@ -1039,7 +1141,8 @@ ul {
   transform: rotate(7deg);
 }
 .poster__energy-headline h2 {
-  font-family: "Marydale Bold";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 .poster__energy-headline--top {
   display: block;
@@ -1055,10 +1158,10 @@ ul {
   top: 35px;
   right: 14px;
   padding-right: 32px;
-  font-family: "Marydale";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 .poster__energy-table h3 {
-  font-family: "Marydale Bold";
+  font-weight: bold;
   margin-bottom: 12px;
 }
 .poster__energy-table li {
@@ -1116,7 +1219,8 @@ ul {
   display: flex;
   position: relative;
   max-width: 15.5ch;
-  font-family: "Marydale Black";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
   font-size: 12px;
 }
 .poster__gas-info--left span {
@@ -1126,7 +1230,8 @@ ul {
   width: 18px;
 }
 .poster__gas-info--right {
-  font-family: "Marydale Bold";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
   line-height: 1.8;
   padding-left: 5px;
 }
@@ -1137,18 +1242,18 @@ ul {
   position: absolute;
   bottom: 40px;
   line-height: 1.2;
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 
 .poster__facts-text {
   position: absolute;
 }
 .poster__facts-text p {
-  font-family: "Marydale Bold";
+  font-weight: bold;
   font-size: 10px;
 }
 .poster__facts-text h2 {
-  font-family: "Marydale Black";
-  font-size: 12px;
+  font-weight: 900;
   margin-bottom: 2px;
 }
 
@@ -1200,28 +1305,6 @@ ul {
   width: 20ch;
 }
 
-#earth {
-  position: absolute;
-  bottom: 120px;
-  right: 155px;
-}
-
-#earth-container {
-  position: relative;
-  width: 185px;
-}
-
-#earth-main {
-  max-width: 140px;
-  margin-right: 5px;
-}
-
-#earth-bubble {
-  width: 68px;
-  position: absolute;
-  top: -10px;
-}
-
 .qr-code {
   position: absolute;
   max-width: 70px;
@@ -1234,18 +1317,18 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #0E5BA5;
+  background-color: #0e5ba5;
   height: 40px;
   width: 100%;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0 32px;
   font-size: 8px;
   white-space: nowrap;
-  font-family: "Marydale";
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 .poster__footer-logo {
   width: 175px;
@@ -1265,7 +1348,7 @@ ul {
 }
 .poster__footer-download a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .poster__footer-download::before, .poster__footer-download::after {
   content: "";
@@ -1295,9 +1378,6 @@ ul {
   }
 }
 @media (width <= 600px) {
-  body {
-    padding: 0;
-  }
   .center {
     display: block;
     justify-content: initial;

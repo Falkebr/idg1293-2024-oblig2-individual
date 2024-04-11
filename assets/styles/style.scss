@@ -6,20 +6,31 @@ $padding: 32px;
 
 // fonts
 @font-face {
-  font-family:'Marydale';
-  src: url('../fonts/Marydale Regular.ttf') format('truetype'), url('fonts/Marydale Regular.woff') format('woff');
+  font-family: "Marydale";
+  src:
+    url("../fonts/marydale-regular.ttf") format("ttf"),
+    url("../fonts/marydale-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family:'Marydale Bold';
-  src: url('../fonts/Marydale Bold.ttf') format('truetype'), url('fonts/Marydale Bold.woff') format('woff');
-  }
+  font-family: "Marydale";
+  src:
+    url("../fonts/marydale-bold.ttf") format("ttf"),
+    url("../fonts/marydale-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family:'Marydale Black';
-    src: url('../fonts/Marydale Black.ttf') format('truetype'), url('fonts/Marydale Black.woff') format('woff');
-  } 
-
+@font-face {
+  font-family: "Marydale";
+  src:
+    url("../fonts/marydale-black.ttf") format("ttf"),
+    url("../fonts/marydale-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
 
 // default styling
 * {
@@ -30,8 +41,8 @@ $padding: 32px;
 
 body {
   padding: 0 100px;
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: colors.$white;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1;
 }
 
@@ -39,7 +50,6 @@ p,
 h2,
 h3 {
   font-size: 12px;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -53,7 +63,6 @@ ul {
 }
 
 .keyword {
-  font-family: 'Open Sans', 'Ariel';
   font-size: 1rem;
   font-weight: 800;
 }
@@ -119,10 +128,10 @@ ul {
 }
 
 .poster__info-text {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 600;
   line-height: 1.1;
   width: 16ch; // changing the maximum characters on a line to make the paragraphs smaller
+  font-weight: 600;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .poster__info-text--first,
@@ -159,7 +168,6 @@ ul {
 
     .poster__headline {
       h1 {
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         font-weight: 800;
         font-size: 1.55rem;
         color: colors.$dark-blue;
@@ -174,7 +182,8 @@ ul {
       }
 
       &-intro {
-        font-family: 'Marydale Bold';
+        font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+        font-weight: bold;
         font-size: 0.78rem;
       }
     }
@@ -186,7 +195,7 @@ ul {
     width: 16ch;
     padding-left: $padding;
     p {
-      font-family: 'Marydale Bold';
+      font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
     }
   }
 }
@@ -206,68 +215,68 @@ ul {
 
 // the text section about "energy"
 
-.poster__energy-headline, .poster__energy-table {
+.poster__energy-headline,
+.poster__energy-table {
   position: absolute;
   color: colors.$white;
 }
 
-  .poster__energy-headline {
-    top: -7px;
-    left: 145px;
-    transform: rotate(7deg);
+.poster__energy-headline {
+  top: -7px;
+  left: 145px;
+  transform: rotate(7deg);
 
-    h2 {
-      font-family: 'Marydale Bold';
-    }
-
-    &--top {
-      display: block;
-    }
-
-    &--bottom {
-      display: block;
-      margin-left: 80px;
-    }
+  h2 {
+    font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
   }
 
-  .poster__energy-table {
-    display: flex;
-    justify-content: space-between;
-    top: 35px;
-    right: 14px;
-    padding-right: $padding;
-    font-family: 'Marydale';
-    
+  &--top {
+    display: block;
+  }
+
+  &--bottom {
+    display: block;
+    margin-left: 80px;
+  }
+}
+
+.poster__energy-table {
+  display: flex;
+  justify-content: space-between;
+  top: 35px;
+  right: 14px;
+  padding-right: $padding;
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  li {
+    line-height: 1.2;
+  }
+
+  &--right {
+    margin-right: 23px;
+
     h3 {
-      font-family: 'Marydale Bold';
-      margin-bottom: 12px;
-    }
-
-    li {
-      line-height: 1.2;
-    }
-
-    &--right {
-      margin-right: 23px;
-
-      h3 {
-        margin-bottom: 16px;
-      }
+      margin-bottom: 16px;
     }
   }
+}
 
-
-
-  // "draw" with CSS learnt from class to make a slighly bent line
-  .poster__energy-draw {
-      position: absolute;
-      top: 25px;
-      border-left: 3px solid white;
-      border-radius: 1px;
-      height: 120px;
-      right: 95px;
-      width: 3px;
-      padding-right: $padding;
+// "draw" with CSS learnt from class to make a slighly bent line
+.poster__energy-draw {
+  position: absolute;
+  top: 25px;
+  border-left: 3px solid white;
+  border-radius: 1px;
+  height: 120px;
+  right: 95px;
+  width: 3px;
+  padding-right: $padding;
 
   &::before {
     content: "";
@@ -290,8 +299,7 @@ ul {
     width: 58px;
     transform: rotate(2.3deg);
   }
-
-    }
+}
 
 // the small text section about "gas"
 .poster__gas-info {
@@ -310,7 +318,8 @@ ul {
     display: flex;
     position: relative;
     max-width: 15.5ch;
-    font-family: 'Marydale Black';
+    font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+    font-weight: 900;
     font-size: 12px;
 
     span {
@@ -323,7 +332,8 @@ ul {
   }
 
   &--right {
-    font-family: 'Marydale Bold';
+    font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
     line-height: 1.8;
     padding-left: 5px;
   }
@@ -335,24 +345,24 @@ ul {
   position: absolute;
   bottom: 40px;
   line-height: 1.2;
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
 
 .poster__facts-text {
   position: absolute;
 
   p {
-    font-family: 'Marydale Bold';
+    font-weight: bold;
     font-size: 10px;
   }
 
   h2 {
-    font-family: 'Marydale Black';
-    font-size: 12px;
+    font-weight: 900;
     margin-bottom: 2px;
-
   }
 }
 
+// trying to make the text span the most similar way possible to the original poter
 .fact {
   &1 {
     top: 40px;
@@ -361,7 +371,7 @@ ul {
   }
 
   &2 {
-    top:10px;
+    top: 10px;
     left: 360px;
     width: 9ch;
   }
@@ -413,30 +423,6 @@ ul {
   }
 }
 
-// styling to make the two svg elements become one unit
-// a less optimal way...
-#earth {
-  position: absolute;
-  bottom: 120px;
-  right: 155px;
-}
-
-#earth-container {
-  position: relative;
-  width: 185px;
-}
-
-#earth-main {
-  max-width: 140px;
-  margin-right: 5px;
-}
-
-#earth-bubble {
-  width: 68px;
-  position: absolute;
-  top: -10px;
-}
-
 .qr-code {
   position: absolute;
   max-width: 70px;
@@ -460,7 +446,7 @@ ul {
   padding: 0 $padding;
   font-size: 8px;
   white-space: nowrap;
-  font-family: 'Marydale';
+  font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 
   &-logo {
     width: 175px;
@@ -520,10 +506,6 @@ ul {
 }
 
 @media (width <=600px) {
-  body {
-    padding: 0;
-  }
-
   .center {
     display: block;
     justify-content: initial;

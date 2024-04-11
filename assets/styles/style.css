@@ -572,7 +572,7 @@
 }
 .moneybag {
   position: absolute;
-  left: 270px;
+  left: 280px;
   bottom: 55px;
   width: 10%;
   animation: updown 3s infinite alternate ease-in-out;
@@ -1139,32 +1139,32 @@ ul {
 }
 
 .poster__facts-text {
-  width: 9ch;
   position: absolute;
-  line-height: 1.2;
 }
 .poster__facts-text p {
   font-family: "Marydale Bold";
-  font-size: 11px;
+  font-size: 10px;
 }
 .poster__facts-text h2 {
   font-family: "Marydale Black";
-  font-size: 11px;
-  margin-bottom: 1.5px;
+  font-size: 12px;
+  margin-bottom: 2px;
 }
 
 .fact1 {
   top: 45px;
   left: 200px;
+  width: 10ch;
 }
 .fact2 {
   top: 4px;
   left: 340px;
+  width: 9ch;
 }
 .fact3 {
   right: 32px;
-  top: 50px;
-  width: 9ch;
+  top: 60px;
+  width: 8ch;
 }
 .fact3 h2 {
   width: 8ch;
@@ -1172,22 +1172,25 @@ ul {
 }
 .fact4 {
   right: 32px;
-  bottom: 97px;
-  width: 12.5ch;
+  bottom: 100px;
+  width: 11ch;
+}
+.fact4 h2 {
+  width: 13ch;
 }
 .fact5 {
   right: 100px;
-  bottom: 15px;
-  width: 12ch;
+  bottom: 25px;
+  width: 11ch;
 }
 .fact6 {
   left: 145px;
-  bottom: 15px;
-  width: 11ch;
+  bottom: 25px;
+  width: 10ch;
 }
 .fact7 {
   padding-left: 32px;
-  top: 140px;
+  top: 130px;
 }
 .fact7 p {
   width: 14ch;
@@ -1208,14 +1211,14 @@ ul {
 }
 
 #earth-main {
-  max-width: 130px;
+  max-width: 140px;
   margin-right: 5px;
 }
 
 #earth-bubble {
   width: 68px;
   position: absolute;
-  top: -20px;
+  top: -10px;
 }
 
 .qr-code {

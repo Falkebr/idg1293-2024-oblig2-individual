@@ -337,19 +337,17 @@ ul {
 }
 
 .poster__facts-text {
-  width: 9ch;
   position: absolute;
-  line-height: 1.2;
 
   p {
     font-family: 'Marydale Bold';
-    font-size: 11px;
+    font-size: 10px;
   }
 
   h2 {
     font-family: 'Marydale Black';
-    font-size: 11px;
-    margin-bottom: 1.5px;
+    font-size: 12px;
+    margin-bottom: 2px;
 
   }
 }
@@ -358,17 +356,19 @@ ul {
   &1 {
     top: 45px;
     left: 200px;
+    width: 10ch;
   }
 
   &2 {
     top: 4px;
     left: 340px;
+    width: 9ch;
   }
 
   &3 {
     right: $padding;
-    top: 50px;
-    width: 9ch;
+    top: 60px;
+    width: 8ch;
 
     h2 {
       width: 8ch;
@@ -378,25 +378,29 @@ ul {
 
   &4 {
     right: $padding;
-    bottom: 97px;
-    width: 12.5ch;
+    bottom: 100px;
+    width: 11ch;
+
+    h2 {
+      width: 13ch;
+    }
   }
 
   &5 {
     right: 100px;
-    bottom: 15px;
-    width: 12ch;
+    bottom: 25px;
+    width: 11ch;
   }
 
   &6 {
     left: 145px;
-    bottom: 15px;
-    width: 11ch;
+    bottom: 25px;
+    width: 10ch;
   }
 
   &7 {
     padding-left: $padding;
-    top: 140px;
+    top: 130px;
 
     p {
       width: 14ch;
@@ -422,14 +426,14 @@ ul {
 }
 
 #earth-main {
-  max-width: 130px;
+  max-width: 140px;
   margin-right: 5px;
 }
 
 #earth-bubble {
   width: 68px;
   position: absolute;
-  top: -20px;
+  top: -10px;
 }
 
 .qr-code {

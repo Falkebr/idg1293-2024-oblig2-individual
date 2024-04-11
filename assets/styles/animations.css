@@ -572,7 +572,7 @@
 }
 .moneybag {
   position: absolute;
-  left: 270px;
+  left: 280px;
   bottom: 55px;
   width: 10%;
   animation: updown 3s infinite alternate ease-in-out;

@@ -1136,7 +1136,7 @@ ul {
   height: 315px;
   position: absolute;
   bottom: 40px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .poster__facts-text {
@@ -1164,7 +1164,7 @@ ul {
 }
 .fact3 {
   right: 32px;
-  top: 60px;
+  top: 50px;
   width: 8ch;
 }
 .fact3 h2 {
@@ -1173,7 +1173,7 @@ ul {
 }
 .fact4 {
   right: 32px;
-  bottom: 100px;
+  bottom: 95px;
   width: 11ch;
 }
 .fact4 h2 {

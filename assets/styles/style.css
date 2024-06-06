@@ -973,7 +973,6 @@
 }
 
 body {
-  padding: 0 100px;
   background-color: #ffffff;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1;
@@ -983,6 +982,13 @@ p,
 h2,
 h3 {
   font-size: 12px;
+}
+
+.text--small p,
+.text--small span,
+.text--small a,
+.text--small li {
+  font-size: 8px;
 }
 
 ul {
@@ -995,9 +1001,30 @@ ul {
   justify-content: center;
 }
 
+#big-network {
+  position: absolute;
+  width: 100%;
+  top: 1px;
+}
+
 .keyword {
   font-size: 1rem;
   font-weight: 800;
+}
+
+.bubble {
+  position: absolute;
+  top: -80px;
+  max-width: 100%;
+  filter: url(#blur);
+}
+
+.qr-code {
+  position: absolute;
+  max-width: 70px;
+  bottom: 40px;
+  right: 4px;
+  margin: 5px;
 }
 
 .curve {
@@ -1025,13 +1052,6 @@ ul {
   stroke-width: 0px;
 }
 
-.bubble {
-  position: absolute;
-  top: -80px;
-  max-width: 100%;
-  filter: url(#blur);
-}
-
 .poster {
   display: flex;
   flex-direction: column;
@@ -1042,37 +1062,24 @@ ul {
   background-color: #d9f3fa;
   z-index: -4;
 }
-
-.text--small p,
-.text--small span,
-.text--small a,
-.text--small li {
-  font-size: 8px;
-}
-
 .poster__info-text {
   line-height: 1.1;
   width: 16ch;
   font-weight: 600;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
-
-.poster__info-text--first,
-.poster__info-text--second {
+.poster__info-text--first, .poster__info-text--second {
   position: absolute;
   padding-left: 32px;
 }
-
 .poster__info-text--first {
   top: 24px;
   width: 19ch;
   line-height: 1.2;
 }
-
 .poster__info-text--second {
   top: 60px;
 }
-
 .poster__header {
   position: relative;
   top: 0;
@@ -1106,35 +1113,19 @@ ul {
   font-weight: bold;
   font-size: 0.78rem;
 }
-.poster__header .poster__aside-text {
+.poster__aside-text {
   position: absolute;
   top: 195px;
   width: 16ch;
   padding-left: 32px;
 }
-.poster__header .poster__aside-text p {
+.poster__aside-text p {
   font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
-
-#big-network {
-  position: absolute;
-  width: 100%;
-  top: 1px;
-}
-
-.poster__bottom {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  height: 60%;
-}
-
-.poster__energy-headline,
-.poster__energy-table {
+.poster__energy-headline, .poster__energy-table {
   position: absolute;
   color: #ffffff;
 }
-
 .poster__energy-headline {
   top: -7px;
   left: 145px;
@@ -1151,7 +1142,6 @@ ul {
   display: block;
   margin-left: 80px;
 }
-
 .poster__energy-table {
   display: flex;
   justify-content: space-between;
@@ -1173,7 +1163,6 @@ ul {
 .poster__energy-table--right h3 {
   margin-bottom: 16px;
 }
-
 .poster__energy-draw {
   position: absolute;
   top: 25px;
@@ -1204,7 +1193,6 @@ ul {
   width: 58px;
   transform: rotate(2.3deg);
 }
-
 .poster__gas-info {
   display: flex;
   align-items: center;
@@ -1235,7 +1223,6 @@ ul {
   line-height: 1.8;
   padding-left: 5px;
 }
-
 .poster__facts {
   width: 100%;
   height: 315px;
@@ -1244,75 +1231,23 @@ ul {
   line-height: 1.2;
   font-family: "Marydale", Georgia, "Times New Roman", Times, serif;
 }
-
 .poster__facts-text {
   position: absolute;
 }
-.poster__facts-text p {
+.poster__facts-text > p {
   font-weight: bold;
   font-size: 10px;
 }
-.poster__facts-text h2 {
+.poster__facts-text > h2 {
   font-weight: 900;
   margin-bottom: 2px;
 }
-
-.fact1 {
-  top: 40px;
-  left: 220px;
-  width: 10ch;
+.poster__bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 60%;
 }
-.fact2 {
-  top: 10px;
-  left: 360px;
-  width: 9ch;
-}
-.fact3 {
-  right: 32px;
-  top: 50px;
-  width: 8ch;
-}
-.fact3 h2 {
-  width: 8ch;
-  margin-bottom: 4px;
-}
-.fact4 {
-  right: 32px;
-  bottom: 95px;
-  width: 11ch;
-}
-.fact4 h2 {
-  width: 13ch;
-}
-.fact5 {
-  right: 110px;
-  bottom: 25px;
-  width: 11ch;
-}
-.fact6 {
-  left: 155px;
-  bottom: 25px;
-  width: 10ch;
-}
-.fact7 {
-  padding-left: 32px;
-  top: 150px;
-}
-.fact7 p {
-  width: 14ch;
-}
-.fact7 h2 {
-  width: 20ch;
-}
-
-.qr-code {
-  position: absolute;
-  max-width: 70px;
-  bottom: 40px;
-  right: 4px;
-  margin: 5px;
-}
-
 .poster__footer {
   position: absolute;
   bottom: 0;
@@ -1372,11 +1307,54 @@ ul {
   margin: 10px;
 }
 
-@media (width <= 800px) {
-  body {
-    padding: 0;
-  }
+.fact1 {
+  top: 40px;
+  left: 220px;
+  width: 10ch;
 }
+.fact2 {
+  top: 10px;
+  left: 360px;
+  width: 9ch;
+}
+.fact3 {
+  right: 32px;
+  top: 50px;
+  width: 8ch;
+}
+.fact3 h2 {
+  width: 8ch;
+  margin-bottom: 4px;
+}
+.fact4 {
+  right: 32px;
+  bottom: 95px;
+  width: 11ch;
+}
+.fact4 h2 {
+  width: 13ch;
+}
+.fact5 {
+  right: 110px;
+  bottom: 25px;
+  width: 11ch;
+}
+.fact6 {
+  left: 155px;
+  bottom: 25px;
+  width: 10ch;
+}
+.fact7 {
+  padding-left: 32px;
+  top: 150px;
+}
+.fact7 p {
+  width: 14ch;
+}
+.fact7 h2 {
+  width: 20ch;
+}
+
 @media (width <= 600px) {
   .center {
     display: block;
